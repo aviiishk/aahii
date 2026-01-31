@@ -1,3 +1,4 @@
+import Breadcrumb from "@/components/layout/BreadCrumb";
 import Navbar from "@/components/layout/Navbar";
 
 export default function PublicLayout({
@@ -8,6 +9,7 @@ export default function PublicLayout({
   return (
     <>
       <Navbar />
+      <Breadcrumb />
       <main id="main-content">{children}</main>
     </>
   );
