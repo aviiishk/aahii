@@ -18,7 +18,7 @@ const stats: StatItem[] = [
     bg: "bg-[#fff3e8]",
     accentFrom: "from-[#fb923c]",
     accentTo: "to-[#fdba74]",
-    icon: "/icons/established.webp",
+    icon: "/icons/established.png",
   },
   {
     label: "Active researchers",
@@ -27,7 +27,7 @@ const stats: StatItem[] = [
     bg: "bg-[#eef6ff]",
     accentFrom: "from-[#2563eb]",
     accentTo: "to-[#93c5fd]",
-    icon: "/icons/researchers.webp",
+    icon: "/icons/researchers.png",
   },
   {
     label: "in NIRF",
@@ -36,7 +36,7 @@ const stats: StatItem[] = [
     bg: "bg-[#f3f0ff]",
     accentFrom: "from-[#7c3aed]",
     accentTo: "to-[#c4b5fd]",
-    icon: "/icons/nirf.webp",
+    icon: "/icons/nirf.png",
   },
   {
     label: "in QS World",
@@ -45,7 +45,7 @@ const stats: StatItem[] = [
     bg: "bg-[#ecfdf3]",
     accentFrom: "from-[#16a34a]",
     accentTo: "to-[#86efac]",
-    icon: "/icons/qsworld.webp",
+    icon: "/icons/qsworld.png",
   },
 ];
 
