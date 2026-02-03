@@ -6,39 +6,58 @@ import { usePathname } from "next/navigation";
 export default function Breadcrumb() {
   const pathname = usePathname();
 
-  if (pathname === "/") return null;
-
-
   const segments = pathname
     .split("/")
     .filter(Boolean);
 
   return (
-    <div className="bg-gray-100 border-b">
-      <div className="max-w-7xl mx-auto px-6 py-3 text-sm">
-        <Link href="/" className="text-blue-700 hover:underline">
-          Home
-        </Link>
+    <nav
+      aria-label="Breadcrumb"
+      className="bg-linear-to-r from-slate-50 to-slate-100 border-b"
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
+        <ol className="flex items-center flex-wrap gap-1 text-sm">
+          {/* Home */}
+          <li>
+            <Link
+              href="/"
+              className="font-medium text-blue-700 hover:text-blue-900 transition"
+            >
+              Home
+            </Link>
+          </li>
 
-        {segments.map((segment, index) => {
-          const href = "/" + segments.slice(0, index + 1).join("/");
-          const label = segment
-            .replace(/-/g, " ")
-            .replace(/\b\w/g, l => l.toUpperCase());
+          {segments.map((segment, index) => {
+            const href = "/" + segments.slice(0, index + 1).join("/");
+            const isLast = index === segments.length - 1;
 
-          return (
-            <span key={href}>
-              <span className="mx-2 text-gray-500">/</span>
-              <Link
-                href={href}
-                className="text-blue-700 hover:underline"
-              >
-                {label}
-              </Link>
-            </span>
-          );
-        })}
+            const label = segment
+              .replace(/-/g, " ")
+              .replace(/\b\w/g, (l) => l.toUpperCase());
+
+            return (
+              <li key={href} className="flex items-center gap-1">
+                {/* Separator */}
+                <span className="mx-1 text-slate-400">›</span>
+
+                {/* Segment */}
+                {isLast ? (
+                  <span className="font-semibold text-slate-700">
+                    {label}
+                  </span>
+                ) : (
+                  <Link
+                    href={href}
+                    className="text-blue-700 hover:text-blue-900 transition"
+                  >
+                    {label}
+                  </Link>
+                )}
+              </li>
+            );
+          })}
+        </ol>
       </div>
-    </div>
+    </nav>
   );
 }

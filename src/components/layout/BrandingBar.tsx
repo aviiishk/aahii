@@ -1,53 +1,71 @@
 import Image from "next/image";
+import { Menu } from "lucide-react";
 
-export default function BrandingBar() {
+export default function BrandingBar({
+  onOpenMenu,
+}: {
+  onOpenMenu: () => void;
+}) {
   return (
-    <div className="bg-white border-b">
-      <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 py-2 sm:py-3">
-        <div className="flex items-center justify-between gap-2">
-
-          {/* Left: Logo + Name */}
-          <div className="flex items-center gap-2 min-w-0">
+    <div className="bg-white">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6 py-2 sm:py-3">
+        <div className="flex items-center justify-between gap-4">
+          {/* Left */}
+          <div className="flex items-center gap-3">
             <Image
               src="/logos/aahii-logo.jpeg"
               alt="AAHII official logo"
-              width={40}
-              height={40}
+              width={48}
+              height={48}
               priority
-              className="shrink-0 sm:w-14 sm:h-14"
+              className="rounded sm:w-14 sm:h-14"
             />
 
-            {/* Text block */}
-            <div className="min-w-0">
-              <div className="flex items-center gap-1 min-w-0">
-                <h1 className="text-[13px] sm:text-lg md:text-xl font-bold text-blue-900 whitespace-nowrap">
-                  AAHII
-                </h1>
-
-                <p className="text-[8px] sm:text-sm text-slate-700 truncate">
-                  Assam Advanced Healthcare Innovation Institute
-                </p>
-              </div>
-
-              {/* Subtitle hidden on mobile */}
-              <p className=" sm:block text-[7px] md:text-[12px] text-red-600 leading-snug">
+            <div>
+              <h1 className="text-sm sm:text-lg md:text-xl font-bold text-blue-900">
+                AAHII
+              </h1>
+              <p className="text-[10px] sm:text-sm text-slate-700">
+                Assam Advanced Healthcare Innovation Institute
+              </p>
+              <p className="hidden sm:block text-[10px] text-red-600">
                 A joint venture between Govt. of Assam & IIT-G
               </p>
             </div>
           </div>
 
-          {/* Right: Partner logos */}
-          <div className="flex items-center gap-2 shrink-0">
-            <Image
-              src="/logos/iitg-logo.png"
-              alt="IIT Guwahati logo"
-              width={36}
-              height={36}
-              className="sm:w-12 sm:h-12"
-            />
+          {/* Right */}
+          <div className="flex items-center gap-3">
+            {/* Desktop logos */}
+            <div className="hidden md:flex items-center gap-4">
+              <Image
+                src="/logos/iitg-logo.png"
+                alt="IIT Guwahati logo"
+                width={44}
+                height={44}
+              />
+              <Image
+                src="/logos/assam-gov.jpeg"
+                alt="Government of Assam logo"
+                width={44}
+                height={44}
+                className="rounded-full"
+              />
+            </div>
+
+            {/* Mobile hamburger */}
+            <button
+              onClick={onOpenMenu}
+              className="md:hidden p-2 rounded-md hover:bg-slate-100"
+              aria-label="Open menu"
+            >
+              <Menu />
+            </button>
           </div>
         </div>
       </div>
+
+      <div className="h-px bg-slate-200/60" />
     </div>
   );
 }
