@@ -1,6 +1,21 @@
-// data/sliderData.ts
+// content/homeslider.ts
 
-export const sliderData = [
+export type SliderCTA = {
+  text: string;
+  href: string;
+};
+
+export type SliderItem = {
+  label: string;
+  title: string;
+  description: string;
+  image: string;
+  author?: string;
+  designation?: string;
+  cta?: SliderCTA; // 👈 important
+};
+
+export const sliderData: SliderItem[] = [
   {
     label: "MESSAGE",
     title:
@@ -13,11 +28,12 @@ export const sliderData = [
   },
   {
     label: "DEDICATES TO THE NATION",
-    title: "ASSAM ADVANCED HEALTHCARE INNOVATION INSTITUTE (AAHII)",
+    title: "ASSAM ADVANCED HEALTHCARE INNOVATION INNOVATION INSTITUTE (AAHII)",
     description: "14th April 2023",
     image: "/banners/Banners-2.png",
     author: "Narendra Modi",
     designation: "Prime Minister of India",
+    // cta is optional 👍
   },
   {
     label: "MESSAGE",
@@ -28,5 +44,9 @@ export const sliderData = [
     image: "/banners/Banners-3.png",
     author: "Narendra Modi",
     designation: "Prime Minister of India",
+    cta: {
+      text: "Read Full Message",
+      href: "/messages/pm",
+    },
   },
 ];
