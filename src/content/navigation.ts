@@ -9,7 +9,7 @@ export const primaryNavigation: NavItem[] = [
 
   {
     label: "About",
-    href: "/about",
+    href: "/about-us",
     children: [
       { label: "Vision & Mission", href: "/about/vision-mission" },
       { label: "Board of Directors", href: "/about/board-of-directors" },
@@ -21,14 +21,14 @@ export const primaryNavigation: NavItem[] = [
     label: "Departments",
     href: "/departments",
     children: [
-      { label: "Upcoming Departments", href: "/departments/upcoming" },
+      { label: "Upcoming Departments", href: "/departments/upcoming-departments" },
       { label: "Clinical Services", href: "/departments/clinical-services" },
     ],
   },
 
   { label: "Research & Development", href: "/research-development" },
   { label: "Infrastructure", href: "/infrastructure" },
-  { label: "Contact Us", href: "/contact" },
+  { label: "Contact Us", href: "/contact-us" },
 
   {
     label: "Careers",
