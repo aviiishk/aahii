@@ -60,27 +60,26 @@ export default function AboutPage() {
 
         {/* ================= TABS (STICKY) ================= */}
         <div className="sticky top-0 z-20 bg-gray-50 pt-2">
-  <div className="overflow-x-auto">
-    <div className="flex gap-2 bg-white rounded-xl p-2 border border-gray-200 shadow-sm min-w-max">
-      {TABS.map((tab) => (
-        <button
-          key={tab.key}
-          onClick={() => setActiveTab(tab.key)}
-          className={`whitespace-nowrap rounded-lg font-medium transition
+          <div className="overflow-x-auto">
+            <div className="flex gap-2 bg-white rounded-xl p-2 border border-gray-200 shadow-sm min-w-max">
+              {TABS.map((tab) => (
+                <button
+                  key={tab.key}
+                  onClick={() => setActiveTab(tab.key)}
+                  className={`whitespace-nowrap rounded-lg font-medium transition
             px-2 py-1.5 text-xs sm:px-4 sm:py-2 sm:text-base
             ${
               activeTab === tab.key
                 ? "bg-blue-700 text-white shadow"
                 : "text-gray-600 hover:bg-gray-100"
             }`}
-        >
-          {tab.label}
-        </button>
-      ))}
-    </div>
-  </div>
-</div>
-
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
 
         {/* ================= CONTENT ================= */}
         <section className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 sm:p-8">

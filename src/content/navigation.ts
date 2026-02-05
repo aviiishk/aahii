@@ -11,9 +11,9 @@ export const primaryNavigation: NavItem[] = [
     label: "About",
     href: "/about-us",
     children: [
-      { label: "Vision & Mission", href: "/about/vision-mission" },
-      { label: "Board of Directors", href: "/about/board-of-directors" },
-      { label: "Management Team", href: "/about/management-team" },
+      { label: "Vision & Mission", href: "/about-us/vision-mission" },
+      { label: "Board of Directors", href: "/about-us/board-of-directors" },
+      { label: "Management Team", href: "/about-us/management-team" },
     ],
   },
 
