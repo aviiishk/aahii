@@ -54,7 +54,7 @@ export default function IITStats() {
     <section className="max-w-7xl mx-auto px-4 sm:px-6 py-20">
       {/* ================= HEADER ================= */}
       <div className="mb-14 max-w-3xl mx-auto text-center">
-        <h3 className="text-sm font-semibold tracking-wide text-[#1f3b8b] mb-2">
+        <h3 className="text-xl font-semibold tracking-wide text-[#1f3b8b] mb-2">
           IIT GUWAHATI
         </h3>
 
@@ -94,21 +94,24 @@ export default function IITStats() {
                 bg-gradient-to-b ${item.accentFrom} ${item.accentTo}
               `}
             />
-            {/* Icon */}
 
             {/* Icon */}
             <div
-              className="absolute right-5 top-5
-                    w-[54px] h-[54px]
-                    rounded-full bg-white flex items-center justify-center shadow-[0_6px_16px_rgba(0,0,0,0.15)]">
-              <Image
-                src={item.icon}
-                alt={item.label}
-                width={28}
-                height={28}
-                className="object-contain"
-              />
-            </div>
+  className="absolute right-5 top-5
+             w-[54px] h-[54px]
+             flex items-center justify-center
+             rounded-full
+             shadow-[0_6px_16px_rgba(0,0,0,0.15)]"
+>
+  <Image
+    src={item.icon}
+    alt={item.label}
+    width={54}
+    height={54}
+    className="rounded-full"
+  />
+</div>
+
 
             {/* Badge */}
             <div

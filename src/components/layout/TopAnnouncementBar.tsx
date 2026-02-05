@@ -42,7 +42,7 @@ export default function TopAnnouncementBar() {
   }, [showWelcome]);
 
   return (
-    <div className="bg-(--nav-blue) text-white text-sm overflow-hidden">
+    <div className="bg-(--nav-blue) text-white text-sm overflow-x-hidden">
       <div className="max-w-7xl mx-auto h-10 flex items-center px-3 md:px-4">
         {showWelcome ? (
           <div className="w-full text-center fade-in-out font-medium">

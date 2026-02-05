@@ -12,7 +12,6 @@ export default function PublicLayout({
       <Navbar />
       <Breadcrumb />
       <main id="main-content">{children}</main>
-      {/* Footer can be added here in the future */}
       <Footer />
     </>
   );

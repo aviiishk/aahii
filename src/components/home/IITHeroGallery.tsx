@@ -49,11 +49,13 @@ export default function IITHeroGallery() {
 
         {/* Text */}
         <h1
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-          text-white text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-wide"
-        >
-          IIT GUWAHATI
-        </h1>
+  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+  text-white/80 text-3xl sm:text-5xl md:text-6xl
+  font-extrabold tracking-wide"
+>
+  IIT GUWAHATI
+</h1>
+
 
         {/* Arrows (desktop only) */}
         <button
