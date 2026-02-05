@@ -67,7 +67,7 @@ export default function AboutPage() {
           key={tab.key}
           onClick={() => setActiveTab(tab.key)}
           className={`whitespace-nowrap rounded-lg font-medium transition
-            px-3 py-1.5 text-xs sm:px-4 sm:py-2 sm:text-base
+            px-2 py-1.5 text-xs sm:px-4 sm:py-2 sm:text-base
             ${
               activeTab === tab.key
                 ? "bg-blue-700 text-white shadow"

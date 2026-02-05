@@ -2,28 +2,43 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Home } from "lucide-react";
 
 export default function Breadcrumb() {
   const pathname = usePathname();
+  const segments = pathname.split("/").filter(Boolean);
+  const isHomePage = segments.length === 0;
 
-  const segments = pathname
-    .split("/")
-    .filter(Boolean);
+  // Hide breadcrumb on homepage
+  if (isHomePage) return null;
 
   return (
     <nav
       aria-label="Breadcrumb"
-      className="bg-linear-to-r from-slate-50 to-slate-100 border-b"
+      className="w-full bg-white border-y border-slate-200"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
-        <ol className="flex items-center flex-wrap gap-1 text-sm">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-1.5">
+        <ol
+          className="
+            flex items-center gap-1
+            overflow-x-auto whitespace-nowrap
+            text-[11px] sm:text-xs
+            text-slate-600
+          "
+        >
           {/* Home */}
-          <li>
+          <li className="flex items-center">
             <Link
               href="/"
-              className="font-medium text-blue-700 hover:text-blue-900 transition"
+              aria-label="Home"
+              className="
+                p-1.5 rounded
+                text-blue-700
+                hover:bg-blue-50
+                transition
+              "
             >
-              Home
+              <Home className="h-3.5 w-3.5" />
             </Link>
           </li>
 
@@ -36,19 +51,32 @@ export default function Breadcrumb() {
               .replace(/\b\w/g, (l) => l.toUpperCase());
 
             return (
-              <li key={href} className="flex items-center gap-1">
+              <li key={href} className="flex items-center">
                 {/* Separator */}
-                <span className="mx-1 text-slate-400">›</span>
+                <span className="mx-1 text-slate-400 select-none">/</span>
 
-                {/* Segment */}
                 {isLast ? (
-                  <span className="font-semibold text-slate-700">
+                  <span
+                    aria-current="page"
+                    className="
+                      px-2 py-0.5 rounded
+                      font-medium
+                      text-blue-700
+                      bg-blue-50
+                    "
+                  >
                     {label}
                   </span>
                 ) : (
                   <Link
                     href={href}
-                    className="text-blue-700 hover:text-blue-900 transition"
+                    className="
+                      px-2 py-0.5 rounded
+                      font-medium
+                      text-blue-700
+                      hover:bg-blue-50
+                      transition
+                    "
                   >
                     {label}
                   </Link>
