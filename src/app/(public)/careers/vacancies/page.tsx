@@ -9,7 +9,7 @@ export default function VacanciesPage() {
   return (
     <ComingSoon
       title="Vacancies"
-      subtitle="Careers"
+      highlight="Careers"
       description="Open positions and career opportunities will be announced here soon."
     />
   );

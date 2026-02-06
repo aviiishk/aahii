@@ -9,7 +9,7 @@ export default function FellowshipsPage() {
   return (
     <ComingSoon
       title="Fellowships"
-      subtitle="Academics & Research"
+      highlight="Academics & Research"
       description="Details about fellowship programs and applications will be available soon."
     />
   );
