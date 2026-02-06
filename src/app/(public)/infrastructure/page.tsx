@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import {
   Leaf,
@@ -13,8 +14,25 @@ import {
   Hospital,
   LandPlot,
 } from "lucide-react";
+import ConstructionGallery from "@/components/infra/ConstructionGallery";
+import GallerySection from "@/components/infra/GallerySection";
+const UPCOMING_HOSPITAL_IMAGES = [
+  "/upcoming/1.jpg",
+  "/upcoming/2.png",
+  "/upcoming/3.png",
+  "/upcoming/4.png",
+  "/upcoming/5.png",
+  "/upcoming/6.jpg",
+  "/upcoming/7.png",
+  "/upcoming/8.jpg",
+  "/upcoming/9.png",
+  "/upcoming/10.png",
+  "/upcoming/11.png",
+  "/upcoming/12.png",
 
+];
 export default function InfrastructurePage() {
+  
   return (
     <section className="bg-[#f9fcff] py-20">
       <div className="max-w-7xl mx-auto px-6 space-y-28">
@@ -339,6 +357,13 @@ export default function InfrastructurePage() {
           </div>
         </section>
       </div>
+     <ConstructionGallery />
+       <GallerySection
+      subtitle="Upcoming Infrastructure"
+      title="Hospital"
+      description="A glimpse into our upcoming world-class healthcare campus."
+      images={UPCOMING_HOSPITAL_IMAGES}
+    />
     </section>
   );
 }
