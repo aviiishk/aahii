@@ -8,6 +8,7 @@ import ProposedPrograms from "@/components/home/ProposedPrograms";
 import Niramaya from "@/components/home/niramaya";
 import SyncedImageContent from "@/components/home/SyncedImageContent";
 import PressAndMedia from "@/components/home/PressAndMedia";
+import GovMarquee from "@/components/GovMarquee";
 export default function Home() {
   return (
      <>
@@ -15,11 +16,15 @@ export default function Home() {
       <CoreResearch />
       <IITStats />
       <IITHeroGallery />
+      <GovMarquee />
       <LabResearchSection />
       <TimelineBento />
+      <GovMarquee />
       <ProposedPrograms />
+      <GovMarquee />
       <Niramaya />
       <SyncedImageContent />
+      <GovMarquee />
       <PressAndMedia />
      </>
   );

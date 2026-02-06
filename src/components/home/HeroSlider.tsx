@@ -15,13 +15,13 @@ export default function HeroSlider() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
-    }, 4500); // ICMR-like timing
+    }, 4500);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section className="relative w-full h-[70vh] overflow-hidden">
+    <section className="relative w-full overflow-hidden h-[55vh] sm:h-[65vh] lg:h-[75vh]">
       {/* SLIDES */}
       {images.map((img, index) => (
         <div
@@ -34,36 +34,55 @@ export default function HeroSlider() {
             src={img}
             alt={`Hero slide ${index + 1}`}
             fill
-            className="w-full h-full object-cover"
             priority={index === 0}
+            sizes="100vw"
+            className="object-cover object-center sm:object-[center_top]"
           />
 
-          {/* OPTIONAL DARK OVERLAY (govt style) */}
-          <div className="absolute inset-0 bg-black/20" />
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black/35 sm:bg-black/25" />
         </div>
       ))}
 
-      {/* OPTIONAL CONTENT OVERLAY */}
-      <div className="absolute inset-0 z-20 flex items-center">
-        <div className="max-w-[1400px] mx-auto px-10">
-          <h1 className="text-white text-4xl md:text-5xl font-bold max-w-2xl leading-tight">
-            Advancing Healthcare Through Research & Innovation
+      {/* LOWER-THIRD TEXT */}
+      <div className="absolute inset-0 z-20 flex justify-center">
+        <div
+          className="
+            w-full text-center
+            px-4 sm:px-8 lg:px-10
+            pt-[38vh] sm:pt-[42vh] lg:pt-[48vh]
+          "
+        >
+          <h1
+            className="
+              text-white font-bold leading-snug
+              text-xl sm:text-4xl lg:text-5xl
+              max-w-4xl mx-auto
+            "
+          >
+            Advancing Healthcare Through
+            <br />
+            Research & Innovation
           </h1>
-
-          <p className="text-white/90 mt-4 max-w-xl text-lg">
-            AAHI is committed to excellence in medical research, innovation,
-            and public health impact.
-          </p>
         </div>
       </div>
 
-      {/* DOT INDICATORS */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex gap-2">
+      {/* DOTS (more gap + clickable) */}
+      <div
+        className="hidden 
+          absolute bottom-6 sm:bottom-8 lg:bottom-10
+          left-1/2 -translate-x-1/2
+          z-30 md:flex gap-3
+        "
+      >
         {images.map((_, i) => (
-          <span
+          <button
             key={i}
-            className={`w-3 h-3 rounded-full transition
-              ${i === current ? "bg-orange-500" : "bg-white/60"}
+            onClick={() => setCurrent(i)}
+            aria-label={`Go to slide ${i + 1}`}
+            className={`
+              w-3 h-3 rounded-full transition-all duration-300
+              ${i === current ? "bg-blue-600 scale-110" : "bg-white/60 hover:bg-white"}
             `}
           />
         ))}

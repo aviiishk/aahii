@@ -13,12 +13,12 @@ export default function BrandingBar({
           {/* Left */}
           <div className="flex items-center gap-3">
             <Image
-              src="/logos/aahii-logo.jpeg"
+              src="/logos/aahii-logo.png"
               alt="AAHII official logo"
               width={48}
               height={48}
               priority
-              className="rounded sm:w-14 sm:h-14"
+              className="rounded   sm:w-14 sm:h-14"
             />
 
             <div>

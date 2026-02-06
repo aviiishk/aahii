@@ -122,7 +122,7 @@ export default function IITStats() {
             </div>
 
             {/* Number */}
-            <div className="text-[58px] font-extrabold leading-none tracking-[-0.6px] text-[#0f7a3e] mb-3">
+            <div className="text-[58px] font-extrabold leading-none tracking-[-0.6px] text-(--nav-blue) mb-3">
               {item.number}
             </div>
 
