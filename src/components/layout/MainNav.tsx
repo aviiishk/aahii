@@ -49,14 +49,15 @@ export default function MainNav() {
             {primaryNavigation.map((item) => (
               <li key={item.label} className="relative group">
                 <Link
-                  href={item.href ?? "#"}
-                  className={clsx(
-                    "flex items-center gap-1 py-4 transition",
-                    isActive(item.href)
-                      ? "text-blue-700 font-semibold"
-                      : "text-slate-700 hover:text-blue-700"
-                  )}
-                >
+  href={item.href ?? "#"}
+  className={clsx(
+    "flex items-center gap-1 py-2 px-2.5 rounded-md transition",
+    isActive(item.href)
+      ? "bg-(--nav-blue) text-white font-semibold"
+      : "text-slate-700 hover:bg-(--nav-blue) hover:text-white"
+  )}
+>
+
                   {item.label === "Home" ? (
                     <HomeIcon className="w-4 h-4" />
                   ) : (
@@ -83,16 +84,17 @@ export default function MainNav() {
                     {item.children.map((child) => (
                       <li key={child.label}>
                         <Link
-                          href={child.href!}
-                          className={clsx(
-                            "block px-4 py-2.5 mx-2 rounded-md",
-                            isActive(child.href)
-                              ? "text-blue-700 bg-blue-50 font-medium"
-                              : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
-                          )}
-                        >
-                          {child.label}
-                        </Link>
+  href={child.href!}
+  className={clsx(
+    "block px-2.5 py-2 mx-2 rounded-md transition",
+    isActive(child.href)
+      ? "bg-(--nav-blue) text-white font-medium"
+      : "text-slate-600 hover:bg-(--nav-blue) hover:text-white"
+  )}
+>
+  {child.label}
+</Link>
+
                       </li>
                     ))}
                   </ul>

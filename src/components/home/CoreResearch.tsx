@@ -47,19 +47,21 @@ const researchAreas = [
 
 export default function CoreResearch() {
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 py-20">
-      <h2 className="text-3xl sm:text-4xl font-bold text-center text-[#0f2a6d] mb-14">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
+      <h2 className="text-2xl sm:text-4xl font-bold text-center text-[#0f2a6d] mb-12 sm:mb-14">
         Our Core Research & Innovation Areas
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
         {researchAreas.map((item) => (
           <div
             key={item.title}
             className={`
               relative rounded-2xl ${item.bg}
-              pt-[60px] px-6 pb-8
-              min-h-[180px]
+              pt-[52px] sm:pt-[60px]
+              px-3 sm:px-6
+              pb-4 sm:pb-8
+              min-h-[170px] sm:min-h-[180px]
               shadow-[0_10px_26px_rgba(15,42,109,0.08)]
               hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(15,42,109,0.18)]
               transition-all duration-300
@@ -73,8 +75,8 @@ export default function CoreResearch() {
             {/* Avatar */}
             <div
               className="
-                absolute -top-7 left-6
-                w-14 h-14
+                absolute -top-6 left-4 sm:left-6
+                w-12 h-12 sm:w-14 sm:h-14
                 bg-white rounded-full
                 shadow-[0_6px_16px_rgba(15,42,109,0.18)]
                 flex items-center justify-center overflow-hidden
@@ -91,10 +93,10 @@ export default function CoreResearch() {
 
             {/* Content */}
             <div>
-              <p className="text-[15px] font-semibold text-[#0f2a6d]">
+              <p className="text-sm sm:text-[15px] font-semibold text-[#0f2a6d]">
                 {item.title}
               </p>
-              <p className="mt-2 text-[15px] leading-snug text-gray-600">
+              <p className="mt-4 text-xs sm:text-[15px] leading-snug text-gray-600">
                 {item.desc}
               </p>
             </div>
