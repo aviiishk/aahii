@@ -38,8 +38,8 @@ export const primaryNavigation: NavItem[] = [
     children: [
       { label: "Vacancies", href: "/careers/vacancies" },
       {
-        label: "Fellowship / Training / Internship",
-        href: "/careers/fellowship-training-internship",
+        label: "Fellowship  / Internship",
+        href: "/careers/fellowship-internship",
       },
     ],
   },

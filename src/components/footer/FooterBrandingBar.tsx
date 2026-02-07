@@ -1,26 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Facebook, Twitter, Linkedin, Youtube } from "lucide-react";
+import { Instagram, Twitter, Linkedin, Youtube } from "lucide-react";
 
 const SOCIALS = [
-  {
-    label: "Facebook",
-    href: "https://www.facebook.com/",
-    Icon: Facebook,
-  },
+
   {
     label: "Twitter / X",
-    href: "https://x.com/",
+    href: "https://x.com/AssamIitg78651",
     Icon: Twitter,
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/",
+    href: "https://www.linkedin.com/company/assam-government-iitg-healthcare-foundation/",
     Icon: Linkedin,
   },
   {
-    label: "YouTube",
-    href: "https://www.youtube.com/",
+    label: "Instagram",
+    href: "https://www.instagram.com/agihf.web?igsh=MWQ1ZXpqNzEzbmxjcQ==/",
     Icon: Youtube,
   },
 ];
