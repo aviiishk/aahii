@@ -49,66 +49,45 @@ export default function MainNav() {
             {primaryNavigation.map((item) => (
               <li key={item.label} className="relative group">
                 {item.disabled ? (
-  <span
-    className={clsx(
-      "flex items-center gap-1 py-4 cursor-default",
-      isActive(item.href)
-        ? "text-blue-700 font-semibold"
-        : "text-slate-700"
-    )}
-  >
-    {item.label === "Home" ? (
-      <HomeIcon className="w-4 h-4" />
-    ) : (
-      <span>{item.label}</span>
-    )}
+                  <span
+                    className={clsx(
+                      "flex items-center gap-1 py-4 cursor-default",
+                      isActive(item.href)
+                        ? "text-blue-700 font-semibold"
+                        : "text-slate-700",
+                    )}
+                  >
+                    {item.label === "Home" ? (
+                      <HomeIcon className="w-4 h-4" />
+                    ) : (
+                      <span>{item.label}</span>
+                    )}
 
-    {item.children && (
-      <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
-    )}
-  </span>
-) : (
-  <Link
-    href={item.href ?? "#"}
-    className={clsx(
-      "flex items-center gap-1 py-4 transition",
-      isActive(item.href)
-        ? "text-blue-700 font-semibold"
-        : "text-slate-700 hover:text-blue-700"
-    )}
-  >
-    {item.label === "Home" ? (
-      <HomeIcon className="w-4 h-4" />
-    ) : (
-      <span>{item.label}</span>
-    )}
+                    {item.children && (
+                      <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
+                    )}
+                  </span>
+                ) : (
+                  <Link
+                    href={item.href ?? "#"}
+                    className={clsx(
+                      "flex items-center gap-1 py-4 transition",
+                      isActive(item.href)
+                        ? "text-blue-700 font-semibold"
+                        : "text-slate-700 hover:text-blue-700",
+                    )}
+                  >
+                    {item.label === "Home" ? (
+                      <HomeIcon className="w-4 h-4" />
+                    ) : (
+                      <span>{item.label}</span>
+                    )}
 
-    {item.children && (
-      <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
-    )}
-  </Link>
-)}
-
-                <Link
-  href={item.href ?? "#"}
-  className={clsx(
-    "flex items-center gap-1 py-2 px-2.5 rounded-md transition",
-    isActive(item.href)
-      ? "bg-(--nav-blue) text-white font-semibold"
-      : "text-slate-700 hover:bg-(--nav-blue) hover:text-white"
-  )}
->
-
-                  {item.label === "Home" ? (
-                    <HomeIcon className="w-4 h-4" />
-                  ) : (
-                    <span>{item.label}</span>
-                  )}
-
-                  {item.children && (
-                    <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
-                  )}
-                </Link>
+                    {item.children && (
+                      <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
+                    )}
+                  </Link>
+                )}
 
                 {item.children && (
                   <ul
@@ -125,17 +104,16 @@ export default function MainNav() {
                     {item.children.map((child) => (
                       <li key={child.label}>
                         <Link
-  href={child.href!}
-  className={clsx(
-    "block px-2.5 py-2 mx-2 rounded-md transition",
-    isActive(child.href)
-      ? "bg-(--nav-blue) text-white font-medium"
-      : "text-slate-600 hover:bg-(--nav-blue) hover:text-white"
-  )}
->
-  {child.label}
-</Link>
-
+                          href={child.href!}
+                          className={clsx(
+                            "block px-2.5 py-2 mx-2 rounded-md transition",
+                            isActive(child.href)
+                              ? "bg-(--nav-blue) text-white font-medium"
+                              : "text-slate-600 hover:bg-(--nav-blue) hover:text-white",
+                          )}
+                        >
+                          {child.label}
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -152,7 +130,7 @@ export default function MainNav() {
           "fixed inset-0 z-50 md:hidden transition-opacity duration-200",
           mobileOpen
             ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none"
+            : "opacity-0 pointer-events-none",
         )}
       >
         <div onClick={closeMenu} className="absolute inset-0 bg-black/30" />
@@ -162,7 +140,7 @@ export default function MainNav() {
             "absolute left-0 right-0 top-0 bg-[#eaf1fb] shadow-lg",
             "transition-transform duration-300 ease-out",
             mobileOpen ? "translate-y-0" : "-translate-y-3",
-            "max-h-screen"
+            "max-h-screen",
           )}
         >
           <div className="flex items-center justify-end px-5 h-14 bg-[#eaf1fb]">
@@ -189,7 +167,7 @@ export default function MainNav() {
                             "flex items-center gap-2 flex-1",
                             isActive(item.href)
                               ? "text-blue-700"
-                              : "text-slate-800"
+                              : "text-slate-800",
                           )}
                           onClick={closeMenu}
                         >
@@ -212,7 +190,7 @@ export default function MainNav() {
                           <ChevronDown
                             className={clsx(
                               "w-5 h-5 transition-transform",
-                              isOpen && "rotate-180"
+                              isOpen && "rotate-180",
                             )}
                           />
                         </button>
@@ -223,7 +201,7 @@ export default function MainNav() {
                       <div
                         className={clsx(
                           "overflow-hidden transition-all duration-300",
-                          isOpen ? "max-h-96" : "max-h-0"
+                          isOpen ? "max-h-96" : "max-h-0",
                         )}
                       >
                         <ul className="ml-3 mt-2 space-y-1">
@@ -235,7 +213,7 @@ export default function MainNav() {
                                   "block py-2 text-sm",
                                   isActive(child.href)
                                     ? "text-blue-700 font-medium"
-                                    : "text-slate-700"
+                                    : "text-slate-700",
                                 )}
                                 onClick={closeMenu}
                               >
