@@ -18,7 +18,7 @@ export default function ResearchDevelopmentPage() {
               committed to advancing cutting-edge research and development aimed
               at transforming healthcare delivery through innovation,
               indigenization, and translational science. Anchored by the Assam
-              Advanced Healthcare Innovation Institute (AAHII), AGIHF serves as
+              Advanced Healthcare Innovation Institute (AAHII), serves as
               a unique platform where clinicians, scientists, engineers, and
               industry partners collaborate to address pressing healthcare
               challenges.
@@ -28,7 +28,7 @@ export default function ResearchDevelopmentPage() {
           {/* Right Quote */}
           <div className="lg:col-span-5">
             <div className="border-l-4 border-blue-700 pl-6 text-sm text-gray-500 italic leading-relaxed">
-              “Anchored by AAHII, AGIHF serves as a unique platform where
+              “Anchored by AGIHF, AAHII serves as a unique platform where
               clinicians, scientists, engineers, and industry partners
               collaborate.”
             </div>
@@ -47,7 +47,7 @@ export default function ResearchDevelopmentPage() {
             </h2>
 
             <p className="max-w-2xl text-white/90 leading-relaxed">
-              AGIHF’s research ecosystem is designed to bridge the gap between
+              AAHII’s research ecosystem is designed to bridge the gap between
               laboratory discoveries and real-world clinical applications. Our
               focus lies in developing affordable, scalable, and impactful
               healthcare technologies tailored to regional, national, and global
@@ -71,25 +71,12 @@ export default function ResearchDevelopmentPage() {
             </h3>
 
             <p className="text-gray-600 leading-relaxed mb-6">
-              AGIHF emphasizes bench-to-bedside translation, ensuring that
+              AAHII emphasizes bench-to-bedside translation, ensuring that
               research outcomes lead to tangible clinical and societal impact.
               We actively collaborate with IIT Guwahati, AIIMS Guwahati, state
               medical colleges, national research institutions, startups, and
               industry partners to accelerate innovation.
             </p>
-
-            <div className="flex flex-wrap gap-3">
-              {["IIT Guwahati", "AIIMS Guwahati", "Industry Partners"].map(
-                (item) => (
-                  <span
-                    key={item}
-                    className="px-4 py-2 text-sm bg-gray-100 rounded-lg font-medium text-gray-700"
-                  >
-                    {item}
-                  </span>
-                ),
-              )}
-            </div>
           </div>
 
           {/* Right cards */}
@@ -99,31 +86,35 @@ export default function ResearchDevelopmentPage() {
                 icon: <SquareActivity />,
                 title: "Clinical Validation",
                 desc: "Pilot studies & trials",
+                bg: "bg-pink-100",
               },
               {
                 icon: <CpuIcon />,
                 title: "Indigenous Tech",
                 desc: "Make in India initiatives",
+                bg: "bg-orange-100",
               },
               {
                 icon: <RocketIcon />,
                 title: "Startups",
                 desc: "Incubation & support",
+                bg: "bg-green-100",
               },
               {
                 icon: <UsersIcon />,
                 title: "Capacity Building",
                 desc: "Training for researchers",
+                bg:"bg-indigo-100",
               },
             ].map((card, i) => (
               <div
                 key={i}
                 className={`group p-6 rounded-2xl border border-gray-200 
-    bg-white text-gray-800
-    shadow-sm transition-all duration-300
-    hover:bg-blue-600 hover:border-blue-600 hover:shadow-md
-    ${i % 2 === 1 ? "lg:translate-y-6" : ""}
-  `}
+  ${card.bg} text-gray-800
+  shadow-sm transition-all duration-300
+  hover:bg-blue-600 hover:border-blue-600 hover:shadow-md
+  ${i % 2 === 1 ? "lg:translate-y-6" : ""}
+`}
               >
                 {card.icon && <div className="mb-4">{card.icon}</div>}
                 <h4 className="font-semibold text-gray-900 group-hover:text-white transition-colors hover:text-white mb-1">
@@ -143,7 +134,7 @@ export default function ResearchDevelopmentPage() {
           </h2>
 
           <p className="max-w-3xl mx-auto text-gray-600 leading-relaxed italic">
-            “Through its Research and Development initiatives, AGIHF aims to
+            “Through its Research and Development initiatives, AAHII aims to
             position Assam as a hub of healthcare innovation—contributing to
             improved patient outcomes, reduced healthcare costs, and global
             advancement in health sciences and technology.”
@@ -162,7 +153,7 @@ export default function ResearchDevelopmentPage() {
                   </span>
                 </h3>
                 <p className="text-gray-600 mt-2 max-w-2xl">
-                  AGIHF is proud to announce the acceptance of new project
+                  AAHII is proud to announce the acceptance of new project
                   proposals under the R&D sector, with work initiated under
                   stewardship of Faculty of IIT Guwahati.
                   <span className="text-blue-600 ml-1 font-medium">
