@@ -54,7 +54,11 @@ export default function MainNav() {
                     "flex items-center gap-1 py-2 px-2.5 rounded-md transition",
                     isActive(item.href)
                       ? "bg-(--nav-blue) text-white font-semibold"
-                      : "text-slate-700 hover:bg-(--nav-blue) hover:text-white",
+                      : `
+                  text-slate-700
+                  group-hover:bg-(--nav-blue)
+                  group-hover:text-white
+                `,
                   )}
                 >
                   {item.label === "Home" ? (
@@ -71,14 +75,14 @@ export default function MainNav() {
                 {item.children && (
                   <ul
                     className="
-                      absolute left-0 top-full mt-2 min-w-56
-                      bg-white shadow-xl rounded-xl py-2
-                      opacity-0 invisible translate-y-1
-                      group-hover:opacity-100
-                      group-hover:visible
-                      group-hover:translate-y-0
-                      transition-all duration-200
-                    "
+                absolute left-0 top-full mt-2 min-w-56
+                bg-white shadow-xl rounded-xl py-2
+                opacity-0 invisible translate-y-1
+                group-hover:opacity-100
+                group-hover:visible
+                group-hover:translate-y-0
+                transition-all duration-200
+              "
                   >
                     {item.children.map((child) => (
                       <li key={child.label}>

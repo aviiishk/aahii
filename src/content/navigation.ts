@@ -1,6 +1,7 @@
 export type NavItem = {
   label: string;
   href?: string;
+  disabled?: boolean;
   children?: NavItem[];
 };
 
@@ -33,6 +34,7 @@ export const primaryNavigation: NavItem[] = [
   {
     label: "Careers",
     href: "/careers",
+    disabled: true,
     children: [
       { label: "Vacancies", href: "/careers/vacancies" },
       {
@@ -45,8 +47,9 @@ export const primaryNavigation: NavItem[] = [
   {
     label: "Media",
     href: "/media",
+    disabled: true,
     children: [
-      { label: "News & Events", href: "/media/news-events" },
+      { label: "Gallery", href: "/gallery" },
       { label: "Press Coverage", href: "/media/press-coverage" },
     ],
   },

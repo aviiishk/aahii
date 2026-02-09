@@ -11,28 +11,36 @@ export default function BrandingBar({
       <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6 py-2 sm:py-3">
         <div className="flex items-center justify-between gap-4">
           {/* Left */}
-          <div className="flex items-center gap-3">
-            <Image
-              src="/logos/aahii-logo.png"
-              alt="AAHII official logo"
-              width={48}
-              height={48}
-              priority
-              className="rounded   sm:w-14 sm:h-14"
-            />
+<div className="flex items-start gap-4">
+  <Image
+    src="/logos/aahii-logo.png"
+    alt="AAHII official logo"
+    width={80}
+    height={80}
+    priority
+    className="
+      w-20 h-20
+      sm:w-18 sm:h-18
+      object-contain
+      rounded-xl
+      transition-all duration-300 ease-out
+      hover:scale-105 hover:drop-shadow-md
+    "
+  />
 
-            <div>
-              <h1 className="text-sm sm:text-lg md:text-xl font-bold text-blue-900">
-                AAHII
-              </h1>
-              <p className="text-[10px] sm:text-sm text-slate-700">
-                Assam Advanced Healthcare Innovation Institute
-              </p>
-              <p className="hidden sm:block text-[10px] text-red-600">
-                A joint venture between Govt. of Assam & IIT-G
-              </p>
-            </div>
-          </div>
+  <div className="pt-1">
+    <h1 className="text-sm sm:text-lg md:text-xl font-bold text-blue-900">
+      AAHII
+    </h1>
+    <p className="text-[10px] sm:text-sm text-slate-700">
+      Assam Advanced Healthcare Innovation Institute
+    </p>
+    <p className="hidden sm:block text-[10px] text-red-600">
+      A joint venture between Govt. of Assam & IIT-G
+    </p>
+  </div>
+</div>
+
 
           {/* Right */}
           <div className="flex items-center gap-3">
