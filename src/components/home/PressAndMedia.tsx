@@ -20,11 +20,11 @@ export default function PressAndMedia() {
   };
 
   return (
-    <section className="bg-white py-24">
+    <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-4">
         {/* ================= Header ================= */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0f2a6d] mb-4">
+          <h2 className="text-2xl md:text-4xl font-bold text-[#0f2a6d] mb-4">
             Featured in Leading Publications
           </h2>
           <p className="text-gray-600">
@@ -34,7 +34,7 @@ export default function PressAndMedia() {
         </div>
 
         {/* ================= Logos Marquee ================= */}
-        <div className="relative overflow-hidden py-10 border-y border-gray-100 mb-24">
+        <div className="relative overflow-hidden py-5 border-y border-gray-100 mb-24">
           <div className="pointer-events-none absolute inset-y-0 left-0 w-20 md:w-32 bg-gradient-to-r from-white to-transparent z-10" />
           <div className="pointer-events-none absolute inset-y-0 right-0 w-20 md:w-32 bg-gradient-to-l from-white to-transparent z-10" />
 

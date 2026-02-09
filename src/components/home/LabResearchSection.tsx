@@ -61,11 +61,11 @@ const labs: LabCard[] = [
 
 export default function LabResearchSection() {
   return (
-    <section className="w-full px-[6%] py-20 mt-15 bg-[#faf6ee]">
+    <section className="w-full px-[6%] py-20 mt-10 bg-[#faf6ee]">
         {/* ================= HEADING ================= */}
 <div className="max-w-5xl mx-auto text-center mb-16">
-  <h2 className="text-[26px] sm:text-[32px] font-extrabold tracking-wide text-[#0f2a6d] mb-4">
-    RESEARCH & INNOVATION POSSIBILITIES AT AAHII
+  <h2 className="text-[24px] sm:text-[36px] font-extrabold tracking-wide text-[#0f2a6d] mb-4 ">
+    Research & Innovation Possibilities at AAHII
   </h2>
 
   <p className="text-[15px] sm:text-[16px] leading-relaxed text-[#2f2f2f]">

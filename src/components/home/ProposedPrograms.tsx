@@ -17,8 +17,8 @@ export default function ProposedPrograms() {
     >
       {/* ===== HEADING (ADDED) ===== */}
       <div className="max-w-4xl mx-auto text-center mb-16">
-        <h2 className="text-[26px] sm:text-[34px] font-extrabold tracking-wide text-[#0f2a6d] mb-4">
-          PROPOSED ACADEMIC PROGRAMS AT AAHII
+        <h2 className="text-2xl sm:text-4xl font-extrabold tracking-wide text-[#0f2a6d] mb-4">
+          Proposed Academic Programs at AAHII
         </h2>
       </div>
 

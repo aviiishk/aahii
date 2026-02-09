@@ -14,7 +14,7 @@ type FooterLinksProps = {
 /* -------------------- Data -------------------- */
 const IMPORTANT_LINKS: FooterLink[] = [
   { label: "News", href: "/news" },
-  { label: "Research", href: "/research" },
+  { label: "Research & Development", href: "/research-development" },
   { label: "FAQs", href: "/faqs" },
   { label: "Vision & Mission", href: "/about-us/vision-mission" },
   { label: "Contact Us", href: "/contact-us" },
@@ -24,7 +24,7 @@ const QUICK_LINKS: FooterLink[] = [
   { label: "Departments", href: "/departments" },
   { label: "Our Team", href: "/about-us/management-team" },
   { label: "Sitemap", href: "/sitemap" },
-  { label: "Vacancies", href: "/vacancies" },
+  { label: "Vacancies", href: "careers/vacancies" },
   { label: "Gallery", href: "/gallery" },
 ];
 

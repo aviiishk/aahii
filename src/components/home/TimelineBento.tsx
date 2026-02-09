@@ -7,8 +7,8 @@ export default function TimelineBento() {
     <section className="max-w-7xl mx-auto px-4 sm:px-6 py-20">
       {/* ===== Heading ===== */}
       <div className="text-center mb-14">
-        <h2 className="text-3xl sm:text-4xl font-bold text-[#0f2a6d] mb-4">
-          OUR TIMELINE
+        <h2 className="text-2xl sm:text-4xl font-bold text-[#0f2a6d] mb-4">
+          Our Timeline
         </h2>
         <p className="text-[15px] sm:text-[16px] text-[#2f2f2f] max-w-2xl mx-auto">
           Our experts and specialists of particular branches performing

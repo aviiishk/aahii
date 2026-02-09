@@ -54,11 +54,11 @@ export default function IITStats() {
     <section className="max-w-7xl mx-auto px-4 sm:px-6 py-5">
       {/* ================= HEADER ================= */}
       <div className="mb-14 max-w-3xl mx-auto text-center">
-        <h3 className="text-3xl sm:text-4xl font-bold text-[#0f2a6d] mb-2">
+        <h3 className="text-2xl sm:text-4xl font-bold text-[#0f2a6d] mb-2">
           Indian Institute of Technology Guwahati
         </h3>
 
-        <h2 className="text-2xl sm:text-3xl font-bold text-[#0f2a6d] mb-4">
+        <h2 className="text-xl sm:text-2xl font-bold text-[#0f2a6d] mb-4">
           Excellence that speaks through impact
         </h2>
 

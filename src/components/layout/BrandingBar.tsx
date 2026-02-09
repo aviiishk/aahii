@@ -20,7 +20,7 @@ export default function BrandingBar({
     priority
     className="
       w-20 h-20
-      sm:w-18 sm:h-18
+      sm:w-22 sm:h-22
       object-contain
       rounded-xl
       transition-all duration-300 ease-out
