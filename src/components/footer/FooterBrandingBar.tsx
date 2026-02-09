@@ -30,26 +30,27 @@ export default function FooterBrandingBar() {
 
             {/* LEFT */}
             <div className="flex items-center gap-4">
-              <div className="relative h-12 w-12 shrink-0">
-                <Image
-                  src="/logos/aahii-logo.jpeg"
-                  alt="AAHII Logo"
-                  fill
-                  priority
-                  className="object-contain transition-transform duration-300 hover:scale-105"
-                />
-              </div>
+              <div className="relative h-16 w-16 shrink-0">
+  <Image
+    src="/logos/aahii-logo.png"
+    alt="AAHII Logo"
+    fill
+    priority
+    className="object-contain scale-110 transition-transform duration-300 hover:scale-115"
+  />
+</div>
+
 
               <div className="leading-tight">
                 <div className="flex items-center gap-1">
                   <span className="text-2xl sm:text-[28px] font-bold text-[#1d2f57]">
-                    AAHII
+                    AGIHF
                   </span>
                   <span className="w-2 h-2 bg-orange-500 rounded-full translate-y-0.5" />
                 </div>
 
                 <p className="text-xs sm:text-[13px] font-semibold text-[#1d2f57] tracking-wide">
-                  Assam Advanced Health and Innovation Institute
+                  Assam Advanced Healthcare and Innovation Institute
                 </p>
 
                 <p className="text-[11px] text-orange-600">

@@ -92,14 +92,14 @@ export default function MainNav() {
                 {item.children && (
                   <ul
                     className="
-                      absolute left-0 top-full mt-2 min-w-56
-                      bg-white shadow-xl rounded-xl py-2
-                      opacity-0 invisible translate-y-1
-                      group-hover:opacity-100
-                      group-hover:visible
-                      group-hover:translate-y-0
-                      transition-all duration-200
-                    "
+                absolute left-0 top-full mt-2 min-w-56
+                bg-white shadow-xl rounded-xl py-2
+                opacity-0 invisible translate-y-1
+                group-hover:opacity-100
+                group-hover:visible
+                group-hover:translate-y-0
+                transition-all duration-200
+              "
                   >
                     {item.children.map((child) => (
                       <li key={child.label}>
