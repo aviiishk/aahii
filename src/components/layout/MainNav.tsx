@@ -48,29 +48,46 @@ export default function MainNav() {
           <ul className="flex items-center justify-center gap-10 h-14 text-sm font-medium">
             {primaryNavigation.map((item) => (
               <li key={item.label} className="relative group">
-                <Link
-                  href={item.href ?? "#"}
-                  className={clsx(
-                    "flex items-center gap-1 py-2 px-2.5 rounded-md transition",
-                    isActive(item.href)
-                      ? "bg-(--nav-blue) text-white font-semibold"
-                      : `
-                  text-slate-700
-                  group-hover:bg-(--nav-blue)
-                  group-hover:text-white
-                `,
-                  )}
-                >
-                  {item.label === "Home" ? (
-                    <HomeIcon className="w-4 h-4" />
-                  ) : (
-                    <span>{item.label}</span>
-                  )}
+                {item.disabled ? (
+                  <span
+                    className={clsx(
+                      "flex items-center gap-1 py-4 cursor-default",
+                      isActive(item.href)
+                        ? "text-blue-700 font-semibold"
+                        : "text-slate-700",
+                    )}
+                  >
+                    {item.label === "Home" ? (
+                      <HomeIcon className="w-4 h-4" />
+                    ) : (
+                      <span>{item.label}</span>
+                    )}
 
-                  {item.children && (
-                    <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
-                  )}
-                </Link>
+                    {item.children && (
+                      <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
+                    )}
+                  </span>
+                ) : (
+                  <Link
+                    href={item.href ?? "#"}
+                    className={clsx(
+                      "flex items-center gap-1 py-4 transition",
+                      isActive(item.href)
+                        ? "text-blue-700 font-semibold"
+                        : "text-slate-700 hover:text-blue-700",
+                    )}
+                  >
+                    {item.label === "Home" ? (
+                      <HomeIcon className="w-4 h-4" />
+                    ) : (
+                      <span>{item.label}</span>
+                    )}
+
+                    {item.children && (
+                      <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
+                    )}
+                  </Link>
+                )}
 
                 {item.children && (
                   <ul
