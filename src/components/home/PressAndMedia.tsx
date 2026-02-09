@@ -24,7 +24,7 @@ export default function PressAndMedia() {
       <div className="max-w-7xl mx-auto px-4">
         {/* ================= Header ================= */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0f2a6d] mb-4">
             Featured in Leading Publications
           </h2>
           <p className="text-gray-600">
@@ -71,7 +71,7 @@ export default function PressAndMedia() {
 {/* ================= Latest News ================= */}
 <div className="relative">
   {/* Heading */}
-  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
+  <h3 className="text-2xl md:text-3xl font-bold text-center text-[#0f2a6d] mb-8">
     Latest News
   </h3>
 

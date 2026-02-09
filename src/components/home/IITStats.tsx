@@ -51,14 +51,14 @@ const stats: StatItem[] = [
 
 export default function IITStats() {
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 py-20">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 py-5">
       {/* ================= HEADER ================= */}
       <div className="mb-14 max-w-3xl mx-auto text-center">
-        <h3 className="text-xl font-semibold tracking-wide text-[#1f3b8b] mb-2">
-          IIT GUWAHATI
+        <h3 className="text-3xl sm:text-4xl font-bold text-[#0f2a6d] mb-2">
+          Indian Institute of Technology Guwahati
         </h3>
 
-        <h2 className="text-3xl sm:text-4xl font-bold text-[#0f2a6d] mb-4">
+        <h2 className="text-2xl sm:text-3xl font-bold text-[#0f2a6d] mb-4">
           Excellence that speaks through impact
         </h2>
 

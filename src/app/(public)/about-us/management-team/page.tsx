@@ -125,7 +125,7 @@ function Section({
 }) {
   return (
     <section className={`mx-auto max-w-7xl px-6 ${className}`}>
-      <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-10">
+      <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-20">
         {title}
       </h2>
       {children}
@@ -148,24 +148,28 @@ function TeamCard({ member }: { member: TeamMember }) {
   return (
     <article
       className="
-      mt-15
-        group relative bg-white rounded-2xl
-        pt-20 px-6 pb-8
-        shadow-[0_12px_30px_rgba(15,42,109,0.12)]
+        group relative bg-white rounded-[24px]
+        pt-[86px] px-[34px] pb-[44px]
+        shadow-[0_20px_50px_rgba(15,42,109,0.10)]
         transition-all duration-300
-        hover:-translate-y-2
-        hover:shadow-[0_22px_50px_rgba(15,42,109,0.18)]
+        hover:-translate-y-[10px]
+        hover:shadow-[0_34px_72px_rgba(15,42,109,0.18)]
       "
     >
       {/* Avatar */}
       <div
         className="
-          absolute left-1/2 -top-12 -translate-x-1/2
+          absolute left-1/2 -top-[56px] -translate-x-1/2
           sm:left-6 sm:translate-x-0
-          w-24 h-24 rounded-full bg-white p-1.5
-          shadow-[0_14px_30px_rgba(0,0,0,0.25)]
-          transition-transform duration-300
-          group-hover:scale-110
+
+          w-[112px] h-[112px]
+          rounded-full bg-white p-[6px] overflow-hidden
+
+          shadow-[0_22px_42px_rgba(0,0,0,0.28)]
+          transition-all duration-300
+
+          group-hover:scale-[1.12]
+          group-hover:shadow-[0_26px_55px_rgba(11,92,255,0.35),0_0_0_6px_rgba(11,92,255,0.08)]
         "
       >
         <Image
@@ -179,11 +183,11 @@ function TeamCard({ member }: { member: TeamMember }) {
 
       {/* Content */}
       <div className="text-center sm:text-left">
-        <h3 className="text-base font-semibold text-[#0b5cff] mb-1">
+        <h3 className="text-[18px] font-semibold text-[#0b5cff] mb-2.5">
           {member.name}
         </h3>
 
-        <p className="text-sm text-gray-600 leading-relaxed mb-6">
+        <p className="text-[15px] leading-[1.6] text-[#6b7280] mb-6">
           {member.role}
         </p>
 

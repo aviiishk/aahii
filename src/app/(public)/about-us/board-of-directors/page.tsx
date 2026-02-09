@@ -36,7 +36,7 @@ const boardMembers: BoardMember[] = [
         Government of Assam
       </>
     ),
-    image: "/about/bod/Dr_Anup_Kr_BarmaN.webp",
+    image: "/about/bod/Dr_Anup_Kr_Barman.webp",
     alt: "Dr Anup Barman",
   },
   {

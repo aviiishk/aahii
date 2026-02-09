@@ -11,7 +11,7 @@ export default function TimelineBento() {
           OUR TIMELINE
         </h2>
         <p className="text-[15px] sm:text-[16px] text-[#2f2f2f] max-w-2xl mx-auto">
-          We are all experts and specialists of particular branches performing
+          Our experts and specialists of particular branches performing
           research, diagnosis, ready to serve you at our best.
         </p>
       </div>
@@ -56,7 +56,7 @@ export default function TimelineBento() {
         </div>
 
         {/* 2025–26 (span-2) */}
-        <div className={`${cardBase} bg-green-200 md:col-span-2`}>
+        <div className={`${cardBase} bg-green-200 `}>
           <span className="block w-8 h-2 bg-white/70 rounded-full mb-4"></span>
           <h3 className="text-lg font-semibold text-[#0f2a6d] mb-2">
             2025–26
@@ -70,7 +70,7 @@ export default function TimelineBento() {
         </div>
 
         {/* 2026–27 */}
-        <div className={`${cardBase} bg-blue-200`}>
+        <div className={`${cardBase} bg-blue-200 md:col-span-2`}>
           <span className="block w-8 h-2 bg-white/70 rounded-full mb-4"></span>
           <h3 className="text-lg font-semibold text-[#0f2a6d] mb-2">
             2026–27

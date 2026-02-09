@@ -112,3 +112,44 @@ body {
   }
 }
 
+/* ================= Footer Logo Marquee (Safe) ================= */
+
+@keyframes footer-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.footer-marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: footer-marquee 30s linear infinite;
+  will-change: transform;
+}
+
+.footer-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* Mobile = slower */
+@media (max-width: 640px) {
+  .footer-marquee-track {
+    animation-duration: 42s;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .footer-marquee-track {
+    animation: none;
+    transform: none;
+  }
+}

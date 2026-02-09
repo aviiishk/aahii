@@ -8,7 +8,7 @@ export default function GovMarquee() {
   ];
 
   return (
-    <div className="relative w-full overflow-hidden bg-slate-50 py-3">
+    <div className="relative w-full overflow-hidden  py-3">
       {/* Tricolor bars (full width) */}
       <div className="pointer-events-none absolute inset-x-0 top-0">
   <div className="mx-auto h-1 max-w-7xl bg-gradient-to-r from-[#ff9933] via-white to-[#138808]" />
