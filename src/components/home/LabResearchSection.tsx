@@ -61,7 +61,7 @@ const labs: LabCard[] = [
 
 export default function LabResearchSection() {
   return (
-    <section className="w-full px-[6%] py-20 bg-[#faf6ee]">
+    <section className="w-full px-[6%] py-20 mt-15 bg-[#faf6ee]">
         {/* ================= HEADING ================= */}
 <div className="max-w-5xl mx-auto text-center mb-16">
   <h2 className="text-[26px] sm:text-[32px] font-extrabold tracking-wide text-[#0f2a6d] mb-4">

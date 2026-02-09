@@ -12,6 +12,7 @@ export default function ProposedPrograms() {
         bg-gradient-to-b
         from-[#f0fdf4] via-[#f0f9ff] to-[#6baced]
         md:px-[6%]
+        mt-15 mb-15
       "
     >
       {/* ===== HEADING (ADDED) ===== */}
@@ -23,24 +24,6 @@ export default function ProposedPrograms() {
 
       {/* ===== GRID ===== */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 gap-[22px] md:grid-cols-4 md:gap-6">
-
-        {/* Certificates */}
-        <div className={`${cardBase} bg-[#ffe1cf]`}>
-          <div className="overflow-hidden rounded-[14px] mb-4">
-            <Image
-              src="/programs/certificate.png"
-              alt="Certificates"
-              width={600}
-              height={400}
-              className="h-[170px] w-full object-cover"
-            />
-          </div>
-          <h3 className="text-[17px] font-semibold mb-[6px]">Certificates</h3>
-          <p className="text-[14px] leading-[1.55]">
-            • Speciality specific fellowships<br />
-            • Skill-based program for AHP
-          </p>
-        </div>
 
         {/* PhD */}
         <div className={`${cardBase} bg-[#fff7ed]`}>
@@ -83,7 +66,7 @@ export default function ProposedPrograms() {
         </div>
 
         {/* PG Pre / Para */}
-        <div className={`${cardBase} bg-[#cfeaff]`}>
+        <div className={`${cardBase} bg-[#cfeaff] md:col-span-2`}>
           <div className="overflow-hidden rounded-[14px] mb-4">
             <Image
               src="/programs/ip.jpg"
@@ -97,13 +80,12 @@ export default function ProposedPrograms() {
             PG Degree (Pre / Para-clinical)
           </h3>
           <p className="text-[14px] leading-[1.55]">
-            • MD - Biochemistry, Medicine<br />
-            • Physiology and Community Medicine
+            • MD - Biochemistry, Medicine Physiology and Community Medicine
           </p>
         </div>
 
         {/* Superspeciality – BENTO */}
-        <div className={`${cardBase} bg-[#fefce8] md:col-span-2`}>
+        <div className={`${cardBase} bg-[#fefce8]`}>
           <div className="overflow-hidden rounded-[14px] mb-4">
             <Image
               src="/programs/superspeciality.png"
@@ -155,6 +137,23 @@ export default function ProposedPrograms() {
           <h3 className="text-[17px] font-semibold mb-[6px]">Fellowships</h3>
           <p className="text-[14px] leading-[1.55]">
             • Short-term (6 months) & Long-term (12–18 months)
+          </p>
+        </div>
+        {/* Certificates */}
+        <div className={`${cardBase} bg-[#ffe1cf]`}>
+          <div className="overflow-hidden rounded-[14px] mb-4">
+            <Image
+              src="/programs/certificate.png"
+              alt="Certificates"
+              width={600}
+              height={400}
+              className="h-[170px] w-full object-cover"
+            />
+          </div>
+          <h3 className="text-[17px] font-semibold mb-[6px]">Certificates</h3>
+          <p className="text-[14px] leading-[1.55]">
+            • Speciality specific fellowships<br />
+            • Skill-based program for AHP
           </p>
         </div>
       </div>

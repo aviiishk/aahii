@@ -6,11 +6,11 @@ export default function NiramayaContext() {
         {/* ===== HEADER (CENTERED LIKE JASPER) ===== */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <span className="inline-block mb-6 px-4 py-1 rounded-full
-            bg-sky-100 text-sky-700 text-xs font-semibold tracking-wide">
+            bg-sky-100 text-sky-700 text-3xl font-semibold tracking-wide">
             NIRAMAYA
           </span>
 
-          <h2 className="text-[32px] sm:text-[44px] leading-tight font-bold text-[#0f2a6d] mb-6">
+          <h2 className="text-[20px] sm:text-[44px] leading-tight font-bold text-[#0f2a6d] mb-6">
             Accelerating healthcare innovation
             <br />
             from research to real-world impact.

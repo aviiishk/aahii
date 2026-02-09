@@ -1,70 +1,57 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const logos = [
+  "/logos/iitg-logo.png",
+  "/logos/medirays.png",
+  "/logos/govassam.jpg",
+  "/logos/roboss.png",
+  "/logos/bionest.png",
+];
+
 export default function FooterBottom() {
   return (
     <section className="bg-(--nav-blue) text-white">
-      {/* CARD STRIP */}
-      <div className="py-6 sm:py-10">
-        <div
+      {/* MARQUEE STRIP */}
+<div className="footer-marquee bg-(--nav-blue) py-4 overflow-hidden">
+  <div className="footer-marquee-track flex items-center gap-2 sm:gap-4 md:gap-6">
+    {[...logos, ...logos].map((logo, index) => (
+      <div
+        key={index}
+        className="
+          min-w-[90px]        /* mobile */
+          sm:min-w-[140px]    /* phones */
+          md:min-w-[200px]    /* tablets */
+          lg:min-w-[240px]    /* desktop */
+
+          bg-white rounded-lg
+          px-2 sm:px-4 md:px-6
+          py-1.5 sm:py-3 md:py-4
+
+          flex justify-center items-center
+          shadow-sm
+        "
+      >
+        <Image
+          src={logo}
+          alt="Partner logo"
+          width={200}
+          height={80}
           className="
-            max-w-7xl mx-auto
-            flex items-center gap-4 sm:gap-6
-            px-4 sm:px-6
-            overflow-x-auto scrollbar-hide
+            object-contain
+            h-6 sm:h-10 md:h-14 lg:h-20
           "
-        >
-          {[
-            "/logos/iitg-logo.png",
-            "/logos/medirays.png",
-            "/logos/govassam.jpg",
-            "/logos/roboss.png",
-            "/logos/bionest.png",
-          ].map((logo) => (
-            <div
-              key={logo}
-              className="
-                min-w-35 sm:min-w-55
-                bg-white rounded-xl
-                px-3 sm:px-6
-                py-2 sm:py-4
-                flex justify-center items-center
-              "
-            >
-              <Image
-                src={logo}
-                alt="Partner logo"
-                width={220}
-                height={48}
-                className="h-12 sm:h-20 object-contain"
-              />
-            </div>
-          ))}
-        </div>
+        />
       </div>
+    ))}
+  </div>
+</div>
+
 
       {/* POLICIES */}
       <div className="border-t border-white/20">
-        <div
-          className="
-      max-w-7xl mx-auto
-      px-4 sm:px-6
-      py-3 sm:py-4
-      flex flex-col md:flex-row
-      items-center md:items-center
-      text-xs md:text-sm
-      gap-2 sm:gap-4
-    "
-        >
-          {/* Policies links */}
-          <div
-            className="
-        flex items-center gap-4 sm:gap-6
-        whitespace-nowrap overflow-x-auto scrollbar-hide
-        justify-center md:justify-start
-        w-full md:w-auto
-      "
-          >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex flex-col md:flex-row items-center gap-3 text-xs md:text-sm">
+          <div className="flex flex-wrap justify-center md:justify-start gap-4 sm:gap-6">
             <Link href="/terms" className="hover:underline">
               Terms & Conditions
             </Link>
@@ -76,13 +63,7 @@ export default function FooterBottom() {
             </Link>
           </div>
 
-          {/* Page update */}
-          <p
-            className="
-        text-center md:text-left
-        md:ml-auto
-      "
-          >
+          <p className="md:ml-auto text-center md:text-left">
             <span className="text-orange-400">Page Update on:</span>{" "}
             <strong>27/01/2026</strong>
           </p>

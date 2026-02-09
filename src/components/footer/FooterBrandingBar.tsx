@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Instagram, Twitter, Linkedin, Youtube } from "lucide-react";
 
 const SOCIALS = [
-
   {
     label: "Twitter / X",
     href: "https://x.com/AssamIitg78651",
@@ -27,19 +26,17 @@ export default function FooterBrandingBar() {
       <div className="max-w-7xl mx-auto bg-[#e9eff8] border-t border-[#1d2f57]/20">
         <div className="px-6 sm:px-10 py-6">
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-
             {/* LEFT */}
             <div className="flex items-center gap-4">
               <div className="relative h-16 w-16 shrink-0">
-  <Image
-    src="/logos/aahii-logo.png"
-    alt="AAHII Logo"
-    fill
-    priority
-    className="object-contain scale-110 transition-transform duration-300 hover:scale-115"
-  />
-</div>
-
+                <Image
+                  src="/logos/aahii-logo.png"
+                  alt="AAHII Logo"
+                  fill
+                  priority
+                  className="object-contain scale-110 transition-transform duration-300 hover:scale-115"
+                />
+              </div>
 
               <div className="leading-tight">
                 <div className="flex items-center gap-1">
@@ -92,7 +89,6 @@ export default function FooterBrandingBar() {
                 </Link>
               ))}
             </div>
-
           </div>
         </div>
       </div>
