@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Image from "next/image";
 import {
   Microscope,
@@ -13,7 +13,6 @@ import {
   CheckCircle2,
   ArrowRight,
 } from "lucide-react";
-import { title } from "process";
 
 export const DATA = [
   {
@@ -42,7 +41,6 @@ export const DATA = [
       },
     ],
   },
-
   {
     id: "personalized-medicine",
     label: "Personalized Medicine",
@@ -63,14 +61,12 @@ export const DATA = [
         title: "Precision Therapies",
         desc: "Enable early disease detection through data-driven diagnostics.",
       },
-
       {
         title: "Tailored Interventions",
         desc: "Apply pharmacogenomics to reduce side effects and improve outcomes.",
       },
     ],
   },
-
   {
     id: "multi-scale-robotics",
     label: "Multi Scale Robotics",
@@ -91,14 +87,12 @@ export const DATA = [
         title: "Automation Systems",
         desc: "Integrate AI, sensors, and advanced materials into healthcare robotics.",
       },
-
       {
         title: "Rehabilitation Robotics",
         desc: "Develop robots to assist patient recovery and mobility.",
       },
     ],
   },
-
   {
     id: "nano-therapeutics",
     label: "Nano Therapeutics",
@@ -125,7 +119,6 @@ export const DATA = [
       },
     ],
   },
-
   {
     id: "integrated-medicine",
     label: "Integrated Medicine",
@@ -152,7 +145,6 @@ export const DATA = [
       },
     ],
   },
-
   {
     id: "ml-icu",
     label: "Machine Learning & Big Data (ICU)",
@@ -179,7 +171,6 @@ export const DATA = [
       },
     ],
   },
-
   {
     id: "rehab-robots",
     label: "Rehabilitation Robots",
@@ -210,14 +201,26 @@ export const DATA = [
 
 export default function ResearchInnovation() {
   const [activeTab, setActiveTab] = useState(DATA[0]);
+  const contentRef = useRef<HTMLDivElement | null>(null);
+
+  const handleTabClick = (tab: any) => {
+    setActiveTab(tab);
+
+    if (window.innerWidth < 768) {
+      contentRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
 
   return (
-    <section className="bg-[#f8fbff] py-20">
+    <section className="bg-[#f8fbff] py-12 md:py-20">
       <div className="max-w-[1400px] mx-auto px-6">
         {/* Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-[#0b1b3a]">
-            UPCOMING RESEARCH & <br />
+        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+          <h2 className="text-2xl md:text-4xl font-extrabold text-[#0b1b3a]">
+            UPCOMING RESEARCH &{" "}
             <span className="text-blue-500">INNOVATION POSSIBILITIES</span>
           </h2>
           <p className="mt-4 text-gray-500">
@@ -227,7 +230,7 @@ export default function ResearchInnovation() {
         </div>
 
         {/* Tabs */}
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8">
           {DATA.map((tab) => {
             const Icon = tab.icon;
             const isActive = activeTab.id === tab.id;
@@ -235,20 +238,22 @@ export default function ResearchInnovation() {
             return (
               <button
                 key={tab.id}
-                onClick={() => setActiveTab(tab)}
-                className=" flex flex-col items-center gap-2 text-sm"
+                onClick={() => handleTabClick(tab)}
+                className="flex flex-col items-center gap-1 sm:gap-2 text-xs sm:text-sm"
               >
                 <div
-                  className={`w-10 h-10 flex items-center justify-center rounded-2xl transition-all hover:border-blue-700
+                  className={`w-10 h-10 flex items-center justify-center rounded-2xl transition-all
                     ${
                       isActive
                         ? "bg-blue-500 shadow-lg scale-105"
                         : "bg-white border shadow-sm hover:shadow-md"
                     }`}
                 >
-                  <Icon className={isActive ? "text-white" : "text-blue-500"} />
+                  <Icon
+                    className={isActive ? "text-white" : "text-blue-500"}
+                  />
                 </div>
-                <span className="text-center max-w-[100px] text-gray-700">
+                <span className="text-center max-w-[80px] sm:max-w-[100px] text-gray-700 leading-tight">
                   {tab.label}
                 </span>
               </button>
@@ -257,28 +262,33 @@ export default function ResearchInnovation() {
         </div>
 
         {/* Content */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mt-20">
+        <div
+          ref={contentRef}
+          className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center mt-12 md:mt-20"
+        >
           <div>
-            <div className="mb-10 max-w-xl">
+            <div className="mb-6 md:mb-10 max-w-xl">
               <h3 className="text-2xl font-bold text-[#0b1b3a]">
                 {activeTab.title}
               </h3>
-              <p className="text-gray-500 mt-2 italic">“{activeTab.quote}”</p>
+              <p className="text-gray-500 mt-2 italic">
+                “{activeTab.quote}”
+              </p>
             </div>
-            {/* Image */}
-            <div className="rounded-3xl overflow-hidden shadow-xl bg-black">
+
+            <div className="rounded-3xl overflow-hidden shadow-xl">
               <Image
                 src={activeTab.image}
                 alt={activeTab.title}
                 width={700}
                 height={500}
-                className="w-full h-full object-cover"
+                className="w-full h-[220px] sm:h-[300px] md:h-full object-cover"
               />
             </div>
           </div>
 
           {/* Focus Areas */}
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-3xl shadow-lg">
+          <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-5 sm:p-6 md:p-8 rounded-3xl shadow-lg">
             <h4 className="text-xl font-bold text-[#0b1b3a] mb-6">
               Our Focus Areas
             </h4>
@@ -296,14 +306,8 @@ export default function ResearchInnovation() {
                 </li>
               ))}
             </ul>
-
-            <button className="mt-8 inline-flex items-center gap-2 bg-blue-500 text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-600 transition">
-              Learn More About Research <ArrowRight size={18} />
-            </button>
           </div>
         </div>
-
-        {/* Bottom Caption */}
       </div>
     </section>
   );
