@@ -1,11 +1,43 @@
-import { CpuIcon, Microscope, RocketIcon, SquareActivity, UsersIcon } from "lucide-react";
+"use client";
+
+import {
+  CpuIcon,
+  Microscope,
+  RocketIcon,
+  SquareActivity,
+  UsersIcon,
+} from "lucide-react";
+import { motion, type Variants, type AnimatePresence } from "framer-motion";
+import { useState } from "react";
+
+const fadeUp: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 50,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.9,
+      ease: "easeOut",
+    },
+  },
+};
 
 export default function ResearchDevelopmentPage() {
+  const [activeIndex, setActiveIndex] = useState<number | null>(0);
   return (
     <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-6">
         {/* ===== HERO ===== */}
-        <div className="grid lg:grid-cols-12 gap-12 items-start mb-20">
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          className="grid lg:grid-cols-12 gap-12 items-start mb-20"
+        >
           {/* Left */}
           <div className="lg:col-span-7">
             <h1 className="font-extrabold text-4xl md:text-6xl font-bold leading-tight text-[#1f2937]">
@@ -18,8 +50,8 @@ export default function ResearchDevelopmentPage() {
               committed to advancing cutting-edge research and development aimed
               at transforming healthcare delivery through innovation,
               indigenization, and translational science. Anchored by the Assam
-              Advanced Healthcare Innovation Institute (AAHII), serves as
-              a unique platform where clinicians, scientists, engineers, and
+              Advanced Healthcare Innovation Institute (AAHII), serves as a
+              unique platform where clinicians, scientists, engineers, and
               industry partners collaborate to address pressing healthcare
               challenges.
             </p>
@@ -33,10 +65,16 @@ export default function ResearchDevelopmentPage() {
               collaborate.”
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* ===== VISION CARD ===== */}
-        <div className="relative rounded-3xl overflow-hidden shadow-xl mb-24">
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          className="relative rounded-3xl overflow-hidden shadow-xl mb-24"
+        >
           <div className="bg-gradient-to-r from-blue-600 via-blue-800 to-emerald-500 p-12 md:p-16 text-white">
             <span className="inline-block mb-4 px-4 py-1 text-xs font-semibold bg-white/20 rounded-full">
               OUR VISION
@@ -57,12 +95,18 @@ export default function ResearchDevelopmentPage() {
 
           {/* Decorative icon */}
           <div className="hidden md:block absolute right-12 top-1/2 -translate-y-1/2 opacity-20">
-          <Microscope className="w-50 h-50" />
+            <Microscope className="w-50 h-50" />
           </div>
-        </div>
+        </motion.div>
 
         {/* ===== TRANSLATIONAL & COLLABORATIVE ===== */}
-        <div className="grid lg:grid-cols-12 gap-16">
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          className="grid lg:grid-cols-12 gap-16"
+        >
           {/* Left text */}
           <div className="lg:col-span-5">
             <h3 className="font-serif text-3xl font-bold mb-6 text-gray-900">
@@ -104,7 +148,7 @@ export default function ResearchDevelopmentPage() {
                 icon: <UsersIcon />,
                 title: "Capacity Building",
                 desc: "Training for researchers",
-                bg:"bg-indigo-100",
+                bg: "bg-indigo-100",
               },
             ].map((card, i) => (
               <div
@@ -126,9 +170,15 @@ export default function ResearchDevelopmentPage() {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
         {/* ===== COMMITMENT TO IMPACT ===== */}
-        <section className="mt-32 pt-24 border-t border-gray-200 text-center">
+        <motion.section
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          className="mt-32 pt-24 border-t border-gray-200 text-center"
+        >
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-blue-800 mb-6">
             Commitment to Impact
           </h2>
@@ -139,9 +189,16 @@ export default function ResearchDevelopmentPage() {
             improved patient outcomes, reduced healthcare costs, and global
             advancement in health sciences and technology.”
           </p>
-        </section>
+        </motion.section>
         {/* ===== ANNOUNCEMENTS ===== */}
-        <section className="mt-24 bg-gray-50 py-16 rounded-3xl">
+        {/* ===== ANNOUNCEMENTS ===== */}
+        <motion.section
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          className="mt-24 bg-gray-50 py-16 rounded-3xl"
+        >
           <div className="max-w-4xl mx-auto px-6">
             {/* Header */}
             <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 gap-4">
@@ -167,107 +224,104 @@ export default function ResearchDevelopmentPage() {
               </span>
             </div>
 
-            {/* Accordion List */}
-            <div className="space-y-4">
-              {/* Item 1 (Open by default) */}
-              <details
-                open
-                className="group rounded-xl border border-gray-200 p-5 transition
-               bg-white
-               hover:bg-blue-50 hover:border-blue-500
-               open:bg-blue-50 open:border-blue-500"
-              >
-                <summary
-                  className="cursor-pointer font-semibold flex justify-between items-center
-                 text-gray-900
-                 group-hover:text-blue-700
-                 group-open:text-blue-700"
-                >
-                  Low-Field MRI R&D Unit for Point-of-Care Diagnostics
-                  <span className="transition-transform group-open:rotate-180 text-gray-400 group-hover:text-blue-600">
-                    ⌄
-                  </span>
-                </summary>
+            {/* Accordion Logic */}
+            {(() => {
+              
 
-                <p className="mt-3 text-sm text-gray-600 leading-relaxed">
-                  Led by Dr. Erwin Fuhrer and Dr. Debabrata Sikdar at IIT
-                  Guwahati, this project aims to establish India’s first
-                  indigenous low-field MRI (LF-MRI) R&D unit for point-of-care
-                  diagnostics, focusing on rural and underserved areas. By
-                  leveraging permanent magnets and AI, the team is developing a
-                  portable, cost-effective MRI solution to enable early stroke
-                  diagnosis. The initiative supports the “Make in India” and
-                  Medical Device Policy 2022 goals, with a strong emphasis on
-                  clinical validation and local capacity building.
-                </p>
-              </details>
+              const items = [
+                {
+                  title:
+                    "Low-Field MRI R&D Unit for Point-of-Care Diagnostics",
+                  content: `Led by Dr. Erwin Fuhrer and Dr. Debabrata Sikdar at IIT
+          Guwahati, this project aims to establish India’s first
+          indigenous low-field MRI (LF-MRI) R&D unit for point-of-care
+          diagnostics, focusing on rural and underserved areas. By
+          leveraging permanent magnets and AI, the team is developing a
+          portable, cost-effective MRI solution to enable early stroke
+          diagnosis. The initiative supports the “Make in India” and
+          Medical Device Policy 2022 goals, with a strong emphasis on
+          clinical validation and local capacity building.`,
+                },
+                {
+                  title:
+                    "Atharv: India’s First Globally Certifiable Surgical Robot Platform",
+                  content: `Steered by Prof. Pradip K. Das and Mr. Shashank Sharma,
+          Project Atharv aims to develop India’s first cost-effective,
+          FDA-compliant surgical robotic platform. Led by IIT Guwahati
+          in collaboration with Roboss Pte Ltd, the project envisions a
+          teleoperated system with haptic feedback, AI-driven motion
+          planning, and AR/VR training modules, ultimately aiming to
+          democratize access to robotic surgery and enhance India's
+          global standing in medical technology.`,
+                },
+                {
+                  title:
+                    "Development of Plant-Based Drugs for Rheumatoid Arthritis",
+                  content: `Steered by Prof. Lingaraj Sahoo and Dr. Swapnil Sinha,
+          this project aims to develop a scientifically validated,
+          plant-based therapeutic for Rheumatoid Arthritis, leveraging
+          the rich medicinal biodiversity of Northeast India. Through a
+          structured translational research model, the initiative
+          focuses on delivering a safe, affordable, and accessible
+          treatment, aligning with the vision of Atmanirbhar Bharat and
+          positioning India as a global leader in plant-based
+          immunomodulatory therapies.`,
+                },
+              ];
 
-              {/* Item 2 */}
-              <details
-                className="group rounded-xl border border-gray-200 p-5 transition
-               bg-white
-               hover:bg-blue-50 hover:border-blue-500
-               open:bg-blue-50 open:border-blue-500"
-              >
-                <summary
-                  className="cursor-pointer font-semibold flex justify-between items-center
-                 text-gray-900
-                 group-hover:text-blue-700
-                 group-open:text-blue-700"
-                >
-                  Atharv: India’s First Globally Certifiable Surgical Robot
-                  Platform
-                  <span className="transition-transform group-open:rotate-180 text-gray-400 group-hover:text-blue-600">
-                    ⌄
-                  </span>
-                </summary>
+              return (
+                <div className="space-y-4">
+                  {items.map((item, index) => {
+                    const isOpen = activeIndex === index;
 
-                <p className="mt-3 text-sm text-gray-600 leading-relaxed">
-                  Steered by Prof. Pradip K. Das and Mr. Shashank Sharma,
-                  Project Atharv aims to develop India’s first cost-effective,
-                  FDA-compliant surgical robotic platform. Led by IIT Guwahati
-                  in collaboration with Roboss Pte Ltd, the project envisions a
-                  teleoperated system with haptic feedback, AI-driven motion
-                  planning, and AR/VR training modules, untimately aiming to
-                  democratize access to robotic surgery and enhance India's
-                  global standing in medical technology
-                </p>
-              </details>
+                    return (
+                      <div
+                        key={index}
+                        className="rounded-xl border border-gray-200 bg-white
+                transition hover:bg-blue-50 hover:border-blue-500"
+                      >
+                        {/* Header */}
+                        <button
+                          onClick={() =>
+                            setActiveIndex(isOpen ? null : index)
+                          }
+                          className="w-full flex justify-between items-center p-5 text-left font-semibold text-gray-900 hover:text-blue-700"
+                        >
+                          {item.title}
 
-              {/* Item 3 */}
-              <details
-                className="group rounded-xl border border-gray-200 p-5 transition
-               bg-white
-               hover:bg-blue-50 hover:border-blue-500
-               open:bg-blue-50 open:border-blue-500"
-              >
-                <summary
-                  className="cursor-pointer font-semibold flex justify-between items-center
-                 text-gray-900
-                 group-hover:text-blue-700
-                 group-open:text-blue-700"
-                >
-                  Development of Plant-Based Drugs for Rheumatoid Arthritis
-                  <span className="transition-transform group-open:rotate-180 text-gray-400 group-hover:text-blue-600">
-                    ⌄
-                  </span>
-                </summary>
+                          <motion.span
+                            animate={{ rotate: isOpen ? 180 : 0 }}
+                            transition={{ duration: 0.3 }}
+                            className="text-gray-400"
+                          >
+                            ⌄
+                          </motion.span>
+                        </button>
 
-                <p className="mt-3 text-sm text-gray-600 leading-relaxed">
-                  Steered by Prof. Lingaraj Sahoo and Dr. Swapnil Sinha, this
-                  project aims to develop a scientifically validated,
-                  plant-based therapeutic for Rheumatoid Arthritis, leveraging
-                  the rich medicinal biodiversity of Northeast India. Through a
-                  structured translational research model, the initiative
-                  focuses on delivering a safe, affordable, and accessible
-                  treatment, aligning with the vision of Atmanirbhar Bharat and
-                  positioning India as a global leader in plant-based
-                  immunomodulatory therapies.
-                </p>
-              </details>
-            </div>
+                        {/* Content */}
+                        <AnimatePresence initial={false}>
+                          {isOpen && (
+                            <motion.div
+                              initial={{ height: 0, opacity: 0 }}
+                              animate={{ height: "auto", opacity: 1 }}
+                              exit={{ height: 0, opacity: 0 }}
+                              transition={{ duration: 0.4, ease: "easeInOut" }}
+                              className="overflow-hidden"
+                            >
+                              <div className="px-5 pb-5 text-sm text-gray-600 leading-relaxed">
+                                {item.content}
+                              </div>
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
+                      </div>
+                    );
+                  })}
+                </div>
+              );
+            })()}
           </div>
-        </section>
+        </motion.section>
       </div>
     </section>
   );
