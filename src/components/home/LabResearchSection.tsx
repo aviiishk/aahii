@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion, type Variants } from "framer-motion";
+
 
 type LabCard = {
   title: string;
@@ -58,10 +62,40 @@ const labs: LabCard[] = [
     bg: "bg-[#f3f0ff]",
   },
 ];
+const containerVariants: Variants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.12,
+    },
+  },
+};
+
+const cardVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 40,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.7,
+      ease: [0.22, 1, 0.36, 1], // premium cubic-bezier
+    },
+  },
+};
 
 export default function LabResearchSection() {
   return (
-    <section className="w-full px-[6%] py-20 mt-10 bg-[#faf6ee]">
+  <motion.section
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true, amount: 0.2 }}
+  variants={containerVariants}
+  className="w-full px-[6%] py-20 mt-10 bg-[#faf6ee]"
+>
+
         {/* ================= HEADING ================= */}
 <div className="max-w-5xl mx-auto text-center mb-16">
   <h2 className="text-[24px] sm:text-[36px] font-extrabold tracking-wide text-[#0f2a6d] mb-4 ">
@@ -76,8 +110,13 @@ export default function LabResearchSection() {
 
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
         {labs.map((lab, i) => (
-          <div
+          <motion.div
             key={i}
+            variants={cardVariants}
+  whileHover={{
+    y: -8,
+    transition: { duration: 0.3 },
+  }}
             className={`
               ${lab.bg ?? "bg-white"}
               rounded-[22px]
@@ -123,9 +162,9 @@ export default function LabResearchSection() {
             >
               Read More
             </Link>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

@@ -161,8 +161,6 @@ export default function PressAndMedia() {
     </button>
   </div>
 </div>
-
-
       </div>
     </section>
   );

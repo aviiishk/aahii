@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { sliderData } from "@/content/homeslider";
+import { motion, type Variants  } from "framer-motion";
 
 const INTERVAL_MS = 4000;
 
@@ -19,9 +20,29 @@ export default function SyncedImageContent() {
 
     return () => clearInterval(interval);
   }, []);
+const sectionReveal: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 60,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      ease: "easeOut",
+    },
+  },
+};
 
   return (
-    <section className="w-full bg-white py-6 overflow-hidden">
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true,  amount: 0.2 }}
+      variants={sectionReveal}
+      className="w-full bg-white py-6 overflow-hidden"
+    >
       <div className="mx-auto max-w-7xl px-4">
         {/* HEADER */}
         <div className="text-center max-w-4xl mx-auto mb-10">
@@ -123,6 +144,6 @@ export default function SyncedImageContent() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

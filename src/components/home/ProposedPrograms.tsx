@@ -1,32 +1,77 @@
+"use client";
+
 import Image from "next/image";
+import { motion, type Variants } from "framer-motion";
 
 export default function ProposedPrograms() {
   // 🔥 COMMON CARD BASE WITH HOVER
+  const containerVariants: Variants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.12,
+    },
+  },
+};
+
+const cardVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 40,
+    scale: 0.98,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.7,
+      ease: "easeOut",
+    },
+  },
+};
+
   const cardBase =
     "rounded-[18px] p-[16px_16px_18px] shadow-[0_10px_26px_rgba(15,42,109,0.10)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_22px_52px_rgba(15,42,109,0.18)] active:scale-[0.98]";
 
   return (
-    <section
-      className="
-        px-[14px] pt-[60px] pb-[70px]
-        bg-gradient-to-b
-        from-[#f0fdf4] via-[#f0f9ff] to-[#6baced]
-        md:px-[6%]
-        mt-15 mb-15
-      "
-    >
+ <motion.section
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true, amount: 0.2 }}
+  variants={containerVariants}
+  className="
+    px-[14px] pt-[60px] pb-[70px]
+    bg-gradient-to-b
+    from-[#f0fdf4] via-[#f0f9ff] to-[#6baced]
+    md:px-[6%]
+    mt-15 mb-15
+  "
+>
+
       {/* ===== HEADING (ADDED) ===== */}
-      <div className="max-w-4xl mx-auto text-center mb-16">
+ <motion.div
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  viewport={{ once: true }}
+  className="max-w-4xl mx-auto text-center mb-16"
+>
+
         <h2 className="text-2xl sm:text-4xl font-extrabold tracking-wide text-[#0f2a6d] mb-4">
           Proposed Academic Programs at AAHII
         </h2>
-      </div>
+      </motion.div>
 
       {/* ===== GRID ===== */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 gap-[22px] md:grid-cols-4 md:gap-6">
 
         {/* PhD */}
-        <div className={`${cardBase} bg-[#fff7ed]`}>
+        <motion.div
+            variants={cardVariants}
+            whileHover={{y: -10,transition: { duration: 0.3 }, }}
+          className={`${cardBase} bg-[#fff7ed]`}
+        >
           <div className="overflow-hidden rounded-[14px] mb-4">
             <Image
               src="/programs/phd.png"
@@ -41,10 +86,14 @@ export default function ProposedPrograms() {
             • Medical, Engineering & Science programs including integrated
             PG–PhD programs
           </p>
-        </div>
+        </motion.div>
 
         {/* PG Clinical */}
-        <div className={`${cardBase} bg-[#c8f2d5]`}>
+        <motion.div
+          variants={cardVariants}
+          whileHover={{y: -10,transition: { duration: 0.3 }, }}
+          className={`${cardBase} bg-[#c8f2d5]`}
+        >
           <div className="overflow-hidden rounded-[14px] mb-4">
             <Image
               src="/programs/pgclinical.png"
@@ -63,10 +112,14 @@ export default function ProposedPrograms() {
           <p className="text-[14px] leading-[1.55] mt-2">
             • MS - Surgery, G&O, Ortho
           </p>
-        </div>
+        </motion.div>
 
         {/* PG Pre / Para */}
-        <div className={`${cardBase} bg-[#cfeaff] md:col-span-2`}>
+        <motion.div
+          variants={cardVariants}
+          whileHover={{y: -10,transition: { duration: 0.3 }, }}
+          className={`${cardBase} bg-[#cfeaff] md:col-span-2`}
+        >
           <div className="overflow-hidden rounded-[14px] mb-4">
             <Image
               src="/programs/ip.jpg"
@@ -82,10 +135,14 @@ export default function ProposedPrograms() {
           <p className="text-[14px] leading-[1.55]">
             • MD - Biochemistry, Medicine Physiology and Community Medicine
           </p>
-        </div>
+        </motion.div>
 
         {/* Superspeciality – BENTO */}
-        <div className={`${cardBase} bg-[#fefce8]`}>
+        <motion.div
+          variants={cardVariants}
+          whileHover={{y: -10,transition: { duration: 0.3 }, }}
+          className={`${cardBase} bg-[#fefce8]`}
+        >
           <div className="overflow-hidden rounded-[14px] mb-4">
             <Image
               src="/programs/superspeciality.png"
@@ -104,10 +161,14 @@ export default function ProposedPrograms() {
           <p className="text-[14px] leading-[1.55]">
             • DM – Gastroenterology, Nephrology, Neurology
           </p>
-        </div>
+        </motion.div>
 
         {/* UG */}
-        <div className={`${cardBase} bg-[#dcd9ff]`}>
+        <motion.div
+          variants={cardVariants}
+          whileHover={{y: -10,transition: { duration: 0.3 }, }}
+          className={`${cardBase} bg-[#dcd9ff]`}
+        >
           <div className="overflow-hidden rounded-[14px] mb-4">
             <Image
               src="/programs/ugdegree.png"
@@ -121,10 +182,14 @@ export default function ProposedPrograms() {
           <p className="text-[14px] leading-[1.55]">
             • Dialysis, OT, ICU, MLT & Radiology
           </p>
-        </div>
+        </motion.div>
 
         {/* Fellowships */}
-        <div className={`${cardBase} bg-[#e0f2fe]`}>
+        <motion.div
+          variants={cardVariants}
+          whileHover={{y: -10,transition: { duration: 0.3 }, }}
+          className={`${cardBase} bg-[#e0f2fe]`}
+        >
           <div className="overflow-hidden rounded-[14px] mb-4">
             <Image
               src="/programs/fellowships.png"
@@ -138,9 +203,13 @@ export default function ProposedPrograms() {
           <p className="text-[14px] leading-[1.55]">
             • Short-term (6 months) & Long-term (12–18 months)
           </p>
-        </div>
+        </motion.div>
         {/* Certificates */}
-        <div className={`${cardBase} bg-[#ffe1cf]`}>
+        <motion.div
+          variants={cardVariants}
+          whileHover={{y: -10,transition: { duration: 0.3 }, }}
+          className={`${cardBase} bg-[#ffe1cf]`}
+        >
           <div className="overflow-hidden rounded-[14px] mb-4">
             <Image
               src="/programs/certificate.png"
@@ -155,8 +224,8 @@ export default function ProposedPrograms() {
             • Speciality specific fellowships<br />
             • Skill-based program for AHP
           </p>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }
