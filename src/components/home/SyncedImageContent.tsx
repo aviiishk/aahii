@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { sliderData } from "@/content/homeslider";
-import { motion, Variants } from "framer-motion";
+import { motion, type Variants  } from "framer-motion";
 
 const INTERVAL_MS = 4000;
 
@@ -20,7 +20,7 @@ export default function SyncedImageContent() {
 
     return () => clearInterval(interval);
   }, []);
-const sectionReveal = {
+const sectionReveal: Variants = {
   hidden: {
     opacity: 0,
     y: 60,

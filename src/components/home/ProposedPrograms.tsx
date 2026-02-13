@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion, Variants } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
 export default function ProposedPrograms() {
   // 🔥 COMMON CARD BASE WITH HOVER
