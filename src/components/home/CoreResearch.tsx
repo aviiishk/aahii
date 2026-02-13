@@ -1,5 +1,7 @@
-import Image from "next/image";
+"use client";
 
+import Image from "next/image";
+import { motion,Variants } from "framer-motion";
 const researchAreas = [
   {
     title: "Stem Cell",
@@ -44,18 +46,55 @@ const researchAreas = [
     bg: "bg-teal-50",
   },
 ];
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
 
+const cardVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 40,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+};
 export default function CoreResearch() {
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
-      <h2 className="text-2xl sm:text-4xl font-bold text-center text-[#0f2a6d] mb-12 sm:mb-14">
+    <motion.section className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={containerVariants}>
+      <motion.h2 className="text-2xl sm:text-4xl font-bold text-center text-[#0f2a6d] mb-12 sm:mb-14"
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}>
         Our Core Research & Innovation Areas
-      </h2>
+      </motion.h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
         {researchAreas.map((item) => (
-          <div
+          <motion.div
             key={item.title}
+            variants={cardVariants}
+            whileHover={{
+              y: -8,
+              scale: 1.03,
+              transition: { duration: 0.3 },
+            }}
             className={`
               relative rounded-2xl ${item.bg}
               pt-[52px] sm:pt-[60px]
@@ -100,9 +139,9 @@ export default function CoreResearch() {
                 {item.desc}
               </p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

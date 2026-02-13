@@ -1,10 +1,46 @@
+"use client";
+import { motion, Variants } from "framer-motion";
+const containerVariants: Variants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.18,
+    },
+  },
+};
+
+const fadeUpVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 50,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.9,
+      ease: "easeOut",
+    },
+  },
+};
+
 export default function NiramayaContext() {
   return (
-    <section className="bg-white py-20 px-4 sm:px-6">
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.15 }}
+      variants={containerVariants}
+      className="bg-white py-20 px-4 sm:px-6"
+    >
+
       <div className="max-w-7xl mx-auto">
 
         {/* ===== HEADER (CENTERED LIKE JASPER) ===== */}
-        <div className="text-center max-w-3xl mx-auto mb-20">
+        <motion.div
+          variants={fadeUpVariants}
+          className="text-center max-w-3xl mx-auto mb-20">
+
           <span className="inline-block mb-6 px-4 py-1 rounded-full
             bg-sky-100 text-sky-700 text-2xl sm:text-3xl font-semibold tracking-wide">
             NIRAMAYA
@@ -29,13 +65,18 @@ export default function NiramayaContext() {
           >
             Explore NIRAMAYA →
           </a>
-        </div>
+        </motion.div>
 
         {/* ===== GRID (JASPER STYLE FLAT BLOCKS) ===== */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
 
           {/* Clinical */}
-          <div className="bg-emerald-50 px-8 py-12">
+          <motion.div
+            variants={fadeUpVariants}
+            whileHover={{ y: -6 }}
+            transition={{ duration: 0.3 }}
+            className="bg-emerald-50 px-8 py-12">
+
             <h3 className="text-xl font-bold leading-tight mb-4">
               <span className=" rounded-full inline-block bg-emerald-500 text-emerald-950 px-3 py-1 mb-2">
                 Clinical
@@ -48,10 +89,14 @@ export default function NiramayaContext() {
               environments, validation frameworks, and hospital-grade testing
               infrastructure.
             </p>
-          </div>
+          </motion.div>
 
           {/* Research */}
-          <div className="bg-blue-50 px-8 py-12">
+          <motion.div
+            variants={fadeUpVariants}
+            whileHover={{ y: -6 }}
+            transition={{ duration: 0.3 }}
+            className="bg-blue-50 px-8 py-12">
             <h3 className="text-xl font-bold leading-tight mb-4">
               <span className="rounded-full inline-block bg-blue-600 text-blue-50 px-3 py-1 mb-2">
                 Research
@@ -63,10 +108,14 @@ export default function NiramayaContext() {
               Translational research powered by IIT-grade labs, interdisciplinary
               science, and deep academic expertise in healthcare and life sciences.
             </p>
-          </div>
+          </motion.div>
 
           {/* Innovation */}
-          <div className="bg-orange-50 px-8 py-12">
+          <motion.div
+            variants={fadeUpVariants}
+            whileHover={{ y: -6 }}
+            transition={{ duration: 0.3 }}
+            className="bg-orange-50 px-8 py-12">
             <h3 className="text-xl font-bold leading-tight mb-4">
               <span className="rounded-full inline-block bg-orange-500 text-orange-950 px-3 py-1 mb-2">
                 Innovation
@@ -78,10 +127,14 @@ export default function NiramayaContext() {
               Supporting startups through structured incubation, mentorship,
               regulatory guidance, and product-to-market acceleration.
             </p>
-          </div>
+          </motion.div>
 
           {/* Institutional */}
-          <div className="bg-pink-50 px-8 py-12">
+          <motion.div
+            variants={fadeUpVariants}
+            whileHover={{ y: -6 }}
+            transition={{ duration: 0.3 }}
+            className="bg-pink-50 px-8 py-12">
             <h3 className="text-xl font-bold leading-tight mb-4">
               <span className="rounded-full inline-block bg-pink-500 text-pink-950 px-3 py-1 mb-2">
                 Institutional
@@ -93,10 +146,9 @@ export default function NiramayaContext() {
               Backed by government, academic, and healthcare institutions ensuring
               credibility, scale, and long-term impact.
             </p>
-          </div>
-
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section >
   );
 }

@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { motion, Variants } from "framer-motion";
 
 type StatItem = {
   label: string;
@@ -48,10 +51,41 @@ const stats: StatItem[] = [
     icon: "/icons/qsworld.png",
   },
 ];
+const containerVariants: Variants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const cardVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: -120,
+    rotate: -4,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    rotate: 0,
+    transition: {
+      type: "spring",
+      stiffness: 120,
+      damping: 12,
+    },
+  },
+};
 
 export default function IITStats() {
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 py-5">
+    <motion.section 
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={containerVariants}
+      className="max-w-7xl mx-auto px-4 sm:px-6 py-5">
       {/* ================= HEADER ================= */}
       <div className="mb-14 max-w-3xl mx-auto text-center">
         <h3 className="text-2xl sm:text-4xl font-bold text-[#0f2a6d] mb-2">
@@ -71,8 +105,13 @@ export default function IITStats() {
       {/* ================= STATS GRID ================= */}
       <div className="flex flex-wrap gap-6">
         {stats.map((item, i) => (
-          <div
+          <motion.div
             key={i}
+            variants={cardVariants}
+          whileHover={{
+        scale: 1.03,
+          transition: { duration: 0.2 },
+  }}
             className={`
               relative ${item.bg}
               rounded-[18px]
@@ -130,9 +169,9 @@ export default function IITStats() {
             <p className="text-[15px] leading-[1.6] text-[#2f2f2f]">
               {item.desc}
             </p>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }
