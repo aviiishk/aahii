@@ -7,7 +7,7 @@ import {
   SquareActivity,
   UsersIcon,
 } from "lucide-react";
-import { motion, type Variants, AnimatePresence } from "framer-motion";
+import { motion, type Variants, type AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 const fadeUp: Variants = {
