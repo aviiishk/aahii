@@ -1,5 +1,6 @@
 "use client";
 import { motion, type Variants } from "framer-motion";
+import Link from "next/link";
 const containerVariants: Variants = {
   hidden: {},
   visible: {
@@ -58,13 +59,12 @@ export default function NiramayaContext() {
             healthcare innovation ecosystem.
           </p>
 
-          <a
-            href="https://agihf.org/niramaya/"
+          <Link
+            href="/niramaya"
             className="inline-block mt-8 text-blue-600 font-semibold
-              border-b-2 border-transparent hover:border-blue-600 transition"
-          >
+             border-b-2 border-transparent hover:border-blue-600 transition">
             Explore NIRAMAYA →
-          </a>
+          </Link>
         </motion.div>
 
         {/* ===== GRID (JASPER STYLE FLAT BLOCKS) ===== */}
