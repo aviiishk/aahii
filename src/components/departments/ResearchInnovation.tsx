@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react";
 import Image from "next/image";
+import { motion, } from "framer-motion";
 import {
   Microscope,
   Brain,
@@ -215,7 +216,14 @@ export default function ResearchInnovation() {
   };
 
   return (
-    <section className="bg-[#f8fbff] py-12 md:py-20">
+    <motion.section
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+      className="bg-[#f8fbff] py-12 md:py-20">
+
+
       <div className="max-w-[1400px] mx-auto px-6">
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
@@ -230,36 +238,53 @@ export default function ResearchInnovation() {
         </div>
 
         {/* Tabs */}
-        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8">
-          {DATA.map((tab) => {
-            const Icon = tab.icon;
-            const isActive = activeTab.id === tab.id;
+        <div
+  className="
+    flex gap-4
+    overflow-x-auto
+    flex-nowrap
+    px-2
+    md:flex-wrap md:justify-center md:overflow-visible md:px-0
+    scroll-smooth
+  "
+>
+  {DATA.map((tab) => {
+    const Icon = tab.icon;
+    const isActive = activeTab.id === tab.id;
 
-            return (
-              <button
-                key={tab.id}
-                onClick={() => handleTabClick(tab)}
-                className="flex flex-col items-center gap-1 sm:gap-2 text-xs sm:text-sm"
-              >
-                <div
-                  className={`w-10 h-10 flex items-center justify-center rounded-2xl transition-all
-                    ${
-                      isActive
-                        ? "bg-blue-500 shadow-lg scale-105"
-                        : "bg-white border shadow-sm hover:shadow-md"
-                    }`}
-                >
-                  <Icon
-                    className={isActive ? "text-white" : "text-blue-500"}
-                  />
-                </div>
-                <span className="text-center max-w-[80px] sm:max-w-[100px] text-gray-700 leading-tight">
-                  {tab.label}
-                </span>
-              </button>
-            );
-          })}
+    return (
+      <button
+        key={tab.id}
+        onClick={() => handleTabClick(tab)}
+        className="
+          flex flex-col items-center gap-1 text-xs
+          min-w-[80px] shrink-0
+          sm:gap-2 sm:text-sm
+        "
+      >
+        <div
+          className={`w-10 h-10 flex items-center justify-center rounded-2xl transition-all duration-200
+            ${
+              isActive
+                ? "bg-blue-500 shadow-lg scale-105"
+                : "bg-white border shadow-sm hover:shadow-md"
+            }`}
+        >
+          <Icon
+            className={`w-5 h-5 ${
+              isActive ? "text-white" : "text-blue-500"
+            }`}
+          />
         </div>
+
+        <span className="text-center max-w-[90px] text-gray-700 leading-tight">
+          {tab.label}
+        </span>
+      </button>
+    );
+  })}
+</div>
+
 
         {/* Content */}
         <div
@@ -309,6 +334,6 @@ export default function ResearchInnovation() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
