@@ -49,14 +49,14 @@ export default function BrandingBar({
               <Image
                 src="/logos/iitg-logo.png"
                 alt="IIT Guwahati logo"
-                width={44}
-                height={44}
+                width={80}
+                height={80}
               />
               <Image
                 src="/logos/assam-gov.jpeg"
                 alt="Government of Assam logo"
-                width={44}
-                height={44}
+                width={80}
+                height={80}
                 className="rounded-full"
               />
             </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 interface ComingSoonProps {
   title: string;
@@ -14,7 +15,15 @@ export default function ComingSoon({
   description = "We’re building the future of healthcare professional development. Be the first to know when we launch our elite fellowship matching and career portal.",
 }: ComingSoonProps) {
   return (
-  <section className="max-w-7xl mx-auto px-4 py-24">
+  <motion.section
+  initial = {{ opacity: 0, y: 50 }
+}
+whileInView = {{ opacity: 1, y: 0 }}
+viewport = {{ once: true, amount: 0.2 }}
+transition = {{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+className = "max-w-7xl mx-auto px-4 py-24"
+  >
+
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
 
     {/* ================= RIGHT ILLUSTRATION (mobile first) ================= */}
@@ -64,11 +73,11 @@ export default function ComingSoon({
     </div>
   </div>
 
-  {/* ================= FOOTER ================= */}
-  <div className="mt-24 text-center text-xs text-gray-400">
-    © {new Date().getFullYear()} AAHII. All rights reserved.
-  </div>
-</section>
+{/* ================= FOOTER ================= */ }
+<div className="mt-24 text-center text-xs text-gray-400">
+  © {new Date().getFullYear()} AAHII. All rights reserved.
+</div>
+</motion.section >
 
   );
 }
