@@ -6,6 +6,7 @@ import Link from "next/link";
 import { eventsData } from "@/content/events";
 import { useDebounce } from "@/hooks/useDebounce";
 import { Search } from "lucide-react";
+import { motion } from "framer-motion";
 
 const ITEMS_PER_PAGE = 6;
 
@@ -30,7 +31,17 @@ export default function EventsPage() {
   }, [filteredEvents, currentPage]);
 
   return (
-    <main className="max-w-7xl mx-auto px-4 py-14">
+    <motion.main
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, amount: 0.2 }}
+  transition={{
+    duration: 0.8,
+    ease: [0.22, 1, 0.36, 1], // Apple-style easing
+  }}
+  className="max-w-7xl mx-auto px-4 py-14"
+>
+
       {/* Header */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
@@ -142,6 +153,6 @@ export default function EventsPage() {
           </button>
         </div>
       )}
-    </main>
+    </motion.main>
   );
 }
