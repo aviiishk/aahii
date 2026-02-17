@@ -19,15 +19,13 @@ export default function ContactPage() {
   initial="hidden"
   whileInView="visible"
   viewport={{ once: true, amount: 0.15 }}
-  className="bg-[#ffffff00] "
->
+  className="bg-[#ffffff00] ">
   <div className="max-w-7xl mx-auto px-6 py-20">
 
     {/* ================= HERO ================= */}
     <motion.div
       variants={fadeUp}
-      className="text-center max-w-2xl mx-auto mb-16"
-    >
+      className="text-center max-w-2xl mx-auto mb-16">
       <h1 className="text-5xl font-extrabold text-gray-900 mb-4">
         Contact us
       </h1>
@@ -40,8 +38,7 @@ export default function ContactPage() {
     {/* ================= FORM + ILLUSTRATIONS ================= */}
     <motion.div
       variants={fadeUp}
-      className="relative grid lg:grid-cols-3 gap-12 items-center"
-    >
+      className="relative grid lg:grid-cols-3 gap-12 items-center">
       {/* Left Illustration */}
       <div className="hidden lg:flex justify-center items-center">
         <Image
