@@ -41,17 +41,17 @@ export default function FooterBrandingBar() {
               <div className="leading-tight">
                 <div className="flex items-center gap-1">
                   <span className="text-2xl sm:text-[28px] font-bold text-[#1d2f57]">
-                    AGIHF
+                    AAHII
                   </span>
                   <span className="w-2 h-2 bg-orange-500 rounded-full translate-y-0.5" />
                 </div>
 
                 <p className="text-xs sm:text-[13px] font-semibold text-[#1d2f57] tracking-wide">
-                  Assam Advanced Healthcare and Innovation Institute
+                  Assam Advanced Healthcare Innovation Institute
                 </p>
 
                 <p className="text-[11px] text-orange-600">
-                  A Joint Venture between Government of Assam and IIT Guwahati
+                
                 </p>
               </div>
             </div>

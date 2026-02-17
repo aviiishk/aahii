@@ -30,10 +30,10 @@ export default function BrandingBar({
 
   <div className="pt-1">
     <h1 className="text-sm sm:text-lg md:text-xl font-bold text-blue-900">
-      AAHII
+      AGIHF
     </h1>
     <p className="text-[10px] sm:text-sm text-slate-700">
-      Assam Advanced Healthcare Innovation Institute
+      Assam Government IIT-G Healthcare Foundation
     </p>
     <p className="hidden sm:block text-[10px] text-red-600">
       A joint venture between Govt. of Assam & IIT-G
