@@ -45,7 +45,7 @@ export default function EventsPage() {
       {/* Header */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <h1 className="text-4xl font-bold text-slate-900">
+          <h1 className="text-4xl font-bold text-[#3c73fe]">
             Event Gallery
           </h1>
           <p className="mt-2 text-slate-600 max-w-xl">

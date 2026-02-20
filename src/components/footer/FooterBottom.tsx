@@ -65,14 +65,14 @@ export default function FooterBottom() {
 
           <p className="md:ml-auto text-center md:text-left">
             <span className="text-orange-400">Page Update on:</span>{" "}
-            <strong>27/01/2026</strong>
+            <strong>20/02/2026</strong>
           </p>
         </div>
       </div>
 
       {/* COPYRIGHT */}
       <div className="bg-[#18284f] text-center py-3 text-sm">
-        Copyright © 2026 | All Rights Reserved by AAHII
+        Copyright © 2026 | All Rights Reserved by AGHIF
       </div>
     </section>
   );
