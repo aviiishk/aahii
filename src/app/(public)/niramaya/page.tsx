@@ -114,7 +114,7 @@ export default function NiramayaPage() {
                         initial={{ y: 20, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 0.2, duration: 0.6 }}
-                        className="inline-block mb-8 px-4 py-1 text-xs tracking-wide bg-blue-100 text-blue-700 rounded-full"
+                        className="inline-block mb-8 px-4 py-1 text-2xl tracking-wide bg-blue-100 font-bold text-blue-700 "
                     >
                         Northeast Incubator for Rapid Acceleration of Medical & Allied Innovations
                     </motion.div>
@@ -124,7 +124,7 @@ export default function NiramayaPage() {
                         initial={{ y: 40, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 0.3, duration: 0.8 }}
-                        className="text-6xl md:text-7xl font-serif font-semibold text-[#0f2a6d]"
+                        className="text-6xl md:text-7xl font-bold  text-[#3a6ef0]"
                     >
                         NIRAMAYA
                     </motion.h1>
@@ -173,12 +173,12 @@ export default function NiramayaPage() {
                             {
                                 icon: <Landmark className="text-blue-600 mb-4" />,
                                 title: "Host Institution",
-                                desc: "IIT Guwahati provides world-class engineering foundation.",
+                                desc: "AAHII with IIT-G provides world-class engineering foundation.",
                             },
                             {
                                 icon: <ShieldCheck className="text-blue-600 mb-4" />,
                                 title: "Implementation Partner",
-                                desc: "AAHII ensures clinical validation and bedside practicality.",
+                                desc: "BioNEST at IIT-G Research park.",
                             },
                         ].map((item, i) => (
                             <motion.div

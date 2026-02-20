@@ -138,7 +138,7 @@ export default function TimelineBento() {
             • Installation of equipments and procurement of services
           </p>
           <p className="text-[15px] text-[#2f2f2f] mt-2">
-            • Initiation of academic programs
+            • Commencing operations
           </p>
         </motion.div>
       </div>

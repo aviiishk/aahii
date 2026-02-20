@@ -43,9 +43,9 @@ export default function FooterTop() {
             </h3>
 
             <p className="text-sm leading-7 text-white/90">
-              Corporate Office:<br />
-              5th Floor, Room No. 505–508, Research Park,<br />
-              IIT Guwahati, Amingaon,<br />
+              Registered Office:<br />
+              Room No. 505–508, 5th Floor, <br />
+              IIT Guwahati Research Park, Amingaon,<br />
               Guwahati – 781039, Assam, India
             </p>
 

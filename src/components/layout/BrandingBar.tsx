@@ -15,11 +15,11 @@ export default function BrandingBar({
   <Image
     src="/logos/aahii-logo.png"
     alt="AAHII official logo"
-    width={80}
-    height={80}
+    width={100}
+    height={100}
     priority
     className="
-      w-20 h-20
+      w-40 h-40
       sm:w-22 sm:h-22
       object-contain
       rounded-xl
@@ -29,11 +29,14 @@ export default function BrandingBar({
   />
 
   <div className="pt-1">
-    <h1 className="text-sm sm:text-lg md:text-xl font-bold text-blue-900">
-      AGIHF
+    <h1 className="text-2xl font-bold text-blue-900">
+      Assam Advanced Healthcare Innovation Institute (AAHII)
     </h1>
-    <p className="text-[10px] sm:text-sm text-slate-900">
-      Assam Government IIT-G Healthcare Foundation
+      <h2 className="text-sm font-bold italic text-blue-500">
+      by
+    </h2>
+    <p className="text-xl  font-bold text-slate-900">
+        Assam Government IIT-G Healthcare Foundation (AGIHF)
     </p>
     <p className="hidden sm:block text-[10px] text-red-600">
       A joint venture between Govt. of Assam & IIT-G
@@ -45,19 +48,20 @@ export default function BrandingBar({
           {/* Right */}
           <div className="flex items-center gap-3">
             {/* Desktop logos */}
-            <div className="hidden md:flex items-center gap-4">
+          
+              <Image
+                src="/logos/assam-gov.png"
+                alt="Government of Assam logo"
+                width={60}
+                height={60}
+                
+              />
+                <div className="hidden md:flex items-center gap-4">
               <Image
                 src="/logos/iitg-logo.png"
                 alt="IIT Guwahati logo"
-                width={80}
-                height={80}
-              />
-              <Image
-                src="/logos/assam-gov.jpeg"
-                alt="Government of Assam logo"
-                width={80}
-                height={80}
-                className="rounded-full"
+                width={60}
+                height={60}
               />
             </div>
 
