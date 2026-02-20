@@ -6,46 +6,51 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    question: "How do I book an initial consultation?",
+    question: "Is AAHII a government hospital?",
     answer:
-      "You can book an appointment through our online portal or by contacting our support team directly.",
+      "AAHII is not a conventional government hospital. It is an advanced healthcare innovation and research institute established through a collaboration between the Government of Assam and IIT Guwahati.",
   },
   {
-    question: "When Will AAHII Start Recruitment Of Scientists?",
+    question: "Who can submit research project proposals to AAHII?",
     answer:
-      "Official recruitment for phase 2 research scientists is scheduled to begin in Q4 2024. Please keep your profile updated in our portal for automatic notifications.",
+      "Yes. AAHII encourages interdisciplinary research and welcomes proposals from researchers across scientific, engineering, and healthcare domains. Collaborations from academia, industry, and independent researchers are evaluated based on scientific merit, feasibility, and alignment with AAHII’s research priorities.",
   },
   {
-    question: "What insurance providers are currently accepted?",
+    question: "When will AAHII begin recruitment for scientific and research positions?",
     answer:
-      "We accept all major national and international insurance providers. Please contact support for detailed verification.",
+      "Recruitment will be conducted in phases as AAHII expands its infrastructure and research programs. All vacancies will be officially announced on the website and through recognized recruitment channels. Interested candidates are encouraged to regularly check for updates.",
   },
   {
-    question: "Are telehealth appointments available for new patients?",
+    question: "How is AAHII currently managing its research and development (R&D) activities without an operational hospital?",
     answer:
-      "Yes, telehealth appointments are available for both new and existing patients.",
+      "AAHII conducts R&D activities through collaborations with partner institutions, hospitals, and research laboratories. The institute focuses on innovation, preclinical research, data-driven healthcare solutions, and translational projects while building the infrastructure required for integrated clinical research in the future.",
   },
   {
-    question: "What are the standard clinic operating hours?",
+    question: "When will the postgraduate (PG) programs at AAHII commence?",
     answer:
-      "Our clinics operate from Monday to Saturday, 9 AM to 6 PM.",
+      "AAHII is in the process of developing its academic and training framework. The timeline for launching postgraduate programs will be announced after completion of the necessary infrastructure development and subject to regulatory clearances. Updates will be shared on the official website.",
   },
   {
-    question: "What are the standard clinic operating hours?",
+    question: "How can an individual or organizations contribute to or collaborate with AAHII?",
     answer:
-      "Our clinics operate from Monday to Saturday, 9 AM to 6 PM.",
+      "AAHII welcomes collaborations in research, technology development, training programs, and healthcare innovation. Individual and organizations may contribute through partnerships, joint projects, funding support, or knowledge exchange initiatives. Interested parties may contact AAHII through the official email address on the website.",
   },
   {
-    question: "What are the standard clinic operating hours?",
+    question: "Is AAHII registered to receive Corporate Social Responsibility (CSR) funding?",
     answer:
-      "Our clinics operate from Monday to Saturday, 9 AM to 6 PM.",
+      "Yes. AAHII/AGIHF is registered as an implementing agency for accepting CSR funds from corporates and other entities. It has been registered with the Ministry of Corporate Affairs, bearing registration no: CSR000100622. Further companies are requested to facilitate partnerships and funding support, including CSR contributions, in accordance with applicable regulations.",
   },
   {
-    question: "What are the standard clinic operating hours?",
+    question: "Does AAHII accept foreign donations or international funding?",
     answer:
-      "Our clinics operate from Monday to Saturday, 9 AM to 6 PM.",
+      "AAHII is open to international collaborations and funding opportunities, subject to compliance with applicable regulatory guidelines governing foreign contributions. All such engagements are processed transparently and in accordance with national regulations. At present, AAHII is not registered under FEMA Act.",
   },
-];
+  {
+    question: "Is AAHII interested in nurturing startups?",
+    answer:
+      "Yes. AAHII actively supports innovation and entrepreneurship in healthcare and biomedical sciences. The institute is committed to nurturing startups through mentorship, collaborative research opportunities, incubation support, and access to innovation networks.",},
+  
+    ];
 
 export default function FAQPage() {
   const [active, setActive] = useState<number | null>(1);
