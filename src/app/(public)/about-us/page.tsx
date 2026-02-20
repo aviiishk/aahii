@@ -36,7 +36,7 @@ const TABS: { key: Tab; label: string }[] = [
 
 const aboutImages = [
   { src: "/about/milestone-1.jpeg", alt: "Foundation ceremony" },
-  { src: "/about/milestone-2.jpeg", alt: "Leadership address" },
+  { src: "/about/m-2.jpeg", alt: "Leadership address" },
   { src: "/about/milestone-3.jpeg", alt: "Inauguration event" },
   { src: "/about/milestone-4.jpeg", alt: "Lamp lighting ceremony" },
   { src: "/about/milestone-5.jpeg", alt: "Public address" },
