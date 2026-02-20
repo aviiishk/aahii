@@ -15,7 +15,7 @@ type FooterLinksProps = {
 const IMPORTANT_LINKS: FooterLink[] = [
   { label: "News", href: "/news" },
   { label: "Research & Development", href: "/research-development" },
-  { label: "FAQs", href: "/faqs" },
+  { label: "FAQs", href: "/faq" },
   { label: "Vision & Mission", href: "/about-us/vision-mission" },
   { label: "Contact Us", href: "/contact-us" },
 ];
