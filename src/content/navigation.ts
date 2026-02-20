@@ -33,7 +33,7 @@ export const primaryNavigation: NavItem[] = [
 
   {
     label: "Careers",
-    href: "/careers",
+    href: "",
     disabled: true,
     children: [
       { label: "Vacancies", href: "/careers/vacancies" },
@@ -46,10 +46,12 @@ export const primaryNavigation: NavItem[] = [
 
   {
     label: "Media",
-    href: "/media",
+    href: "",
     disabled: true,
     children: [
       { label: "Gallery", href: "/gallery" },
+      { label: "Videos", href: "/videos" },
+      { label: "Employee Engagement", href: "/employee-engagement" },
       { label: "Press Coverage", href: "/media/press-coverage" },
     ],
   },
