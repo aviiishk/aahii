@@ -20,6 +20,12 @@ const acc1 = [
   { src: "/about/accordian/4.jpeg", alt: "Lamp lighting ceremony" },
 ];
 
+const acc2 = [
+  { src: "/about/accordian/5.jpeg", alt: "Foundation ceremony" },
+  { src: "/about/accordian/6.jpeg", alt: "Leadership address" },
+  { src: "/about/accordian/7.jpeg", alt: "Inauguration event" },
+];
+
 
 const fadeUp: Variants = {
   hidden: {
@@ -263,7 +269,7 @@ export default function ResearchDevelopmentPage() {
           planning, and AR/VR training modules, ultimately aiming to
           democratize access to robotic surgery and enhance India's
           global standing in medical technology.`,
-          image:<ImageCarousel images={acc1} />,
+          image:<ImageCarousel images={acc2} />,
                 },
                 {
                   title:
@@ -277,7 +283,6 @@ export default function ResearchDevelopmentPage() {
           treatment, aligning with the vision of Atmanirbhar Bharat and
           positioning India as a global leader in plant-based
           immunomodulatory therapies.`,
-          image:<ImageCarousel images={acc1} />,
                 },
               ];
 

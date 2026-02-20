@@ -17,23 +17,6 @@ export interface EventItem {
 }
 
 export const eventsData: EventItem[] = [
-  {
-    id: 1,
-    title: "Employee Engagement",
-    slug: "employee-engagement",
-    category: "medical-workshops",
-    coverImage:
-      "https://agihf.org/wp-content/uploads/2025/12/Bhogali_bihu_1.jpg",
-    images: [
-      "https://agihf.org/wp-content/uploads/2025/12/birthday_celebration_3.png",
-      "https://agihf.org/wp-content/uploads/2025/12/birthday_celebration_2.png",
-      "https://agihf.org/wp-content/uploads/2026/01/Women-in-Beige-Monochrome-Photo-Collage-Instagram-Post1.png",
-      "https://agihf.org/wp-content/uploads/2026/01/Women-in-Beige-Monochrome-Photo-Collage-Instagram-Post-1.png",
-      "https://agihf.org/wp-content/uploads/2025/12/Bhogali_bihu_1.jpg",
-      "https://agihf.org/wp-content/uploads/2026/01/eeee-scaled.jpeg",
-      "https://agihf.org/wp-content/uploads/2026/01/3www.jpeg",
-    ],
-  },
 
     {
     id: 2,

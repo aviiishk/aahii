@@ -40,8 +40,8 @@ export default function InfrastructurePage() {
         {/* INFRASTRUCTURE OVERVIEW */}
         {/* ================================================= */}
         <section>
-          <h2 className="text-4xl font-bold text-center mb-16">
-            Infrastructure
+          <h2 className="text-4xl font-bold text-[#3c73fe] text-center mb-16">
+            INFRASTRUCTURE
           </h2>
 
           <div className="grid lg:grid-cols-2 gap-16 items-start">
