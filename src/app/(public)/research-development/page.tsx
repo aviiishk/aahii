@@ -9,6 +9,17 @@ import {
 } from "lucide-react";
 import { motion, type Variants, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import ImageCarousel from "@/components/ImageCarousel";
+
+
+
+const acc1 = [
+  { src: "/about/accordian/1.jpeg", alt: "Foundation ceremony" },
+  { src: "/about/accordian/2.jpeg", alt: "Leadership address" },
+  { src: "/about/accordian/3.jpeg", alt: "Inauguration event" },
+  { src: "/about/accordian/4.jpeg", alt: "Lamp lighting ceremony" },
+];
+
 
 const fadeUp: Variants = {
   hidden: {
@@ -157,9 +168,7 @@ export default function ResearchDevelopmentPage() {
   ${card.bg} text-gray-800
   shadow-sm transition-all duration-300
   hover:bg-blue-600 hover:border-blue-600 hover:shadow-md
-  ${i % 2 === 1 ? "lg:translate-y-6" : ""}
-`}
-              >
+  ${i % 2 === 1 ? "lg:translate-y-6" : ""}`} >
                 {card.icon && <div className="mb-4">{card.icon}</div>}
                 <h4 className="font-semibold text-gray-900 group-hover:text-white transition-colors hover:text-white mb-1">
                   {card.title}
@@ -206,7 +215,7 @@ export default function ResearchDevelopmentPage() {
                 <h3 className="font-serif text-2xl font-bold text-blue-800">
                   Announcements{" "}
                   <span className="text-sm font-medium text-gray-500">
-                    (Upcoming)
+                    (Ongoing)
                   </span>
                 </h3>
                 <p className="text-gray-600 mt-2 max-w-2xl">
@@ -241,6 +250,7 @@ export default function ResearchDevelopmentPage() {
           diagnosis. The initiative supports the “Make in India” and
           Medical Device Policy 2022 goals, with a strong emphasis on
           clinical validation and local capacity building.`,
+          image:<ImageCarousel images={acc1} />,
                 },
                 {
                   title:
@@ -253,6 +263,7 @@ export default function ResearchDevelopmentPage() {
           planning, and AR/VR training modules, ultimately aiming to
           democratize access to robotic surgery and enhance India's
           global standing in medical technology.`,
+          image:<ImageCarousel images={acc1} />,
                 },
                 {
                   title:
@@ -266,6 +277,7 @@ export default function ResearchDevelopmentPage() {
           treatment, aligning with the vision of Atmanirbhar Bharat and
           positioning India as a global leader in plant-based
           immunomodulatory therapies.`,
+          image:<ImageCarousel images={acc1} />,
                 },
               ];
 
@@ -310,6 +322,7 @@ export default function ResearchDevelopmentPage() {
                             >
                               <div className="px-5 pb-5 text-sm text-gray-600 leading-relaxed">
                                 {item.content}
+                                {item.image && <div className="mt-4">{item.image}</div>}
                               </div>
                             </motion.div>
                           )}
