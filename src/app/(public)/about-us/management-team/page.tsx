@@ -39,7 +39,7 @@ const coreTeamMembers: TeamMember[] = [
   {
     name: "Atish Roy",
     role: "Company Secretary",
-    image: "/about/management-team/e.jpg",
+    image: "/about/management-team/atishroy.jpeg",
     linkedin: "https://www.linkedin.com/in/atish-roy-a94ab21aa/",
   },
   {
