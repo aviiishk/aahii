@@ -91,7 +91,7 @@ export default function ResearchDevelopmentPage() {
               OUR VISION
             </span>
 
-            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl  font-bold mb-6">
               Bridging Lab to Life
             </h2>
 
@@ -120,7 +120,7 @@ export default function ResearchDevelopmentPage() {
         >
           {/* Left text */}
           <div className="lg:col-span-5">
-            <h3 className="font-serif text-3xl font-bold mb-6 text-gray-900">
+            <h3 className=" text-3xl font-bold mb-6 text-gray-900">
               Translational & <br />
               <span className="text-blue-700">Collaborative</span>
             </h3>
@@ -188,7 +188,7 @@ export default function ResearchDevelopmentPage() {
           viewport={{ once: true, amount: 0.2 }}
           className="mt-32 pt-24 border-t border-gray-200 text-center"
         >
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-blue-800 mb-6">
+          <h2 className=" text-3xl md:text-4xl font-bold text-blue-800 mb-6">
             Commitment to Impact
           </h2>
 
