@@ -45,10 +45,11 @@ export const primaryNavigation: NavItem[] = [
   },
 
   {
-    label: "Media",
+    label: "News & Media",
     href: "",
     disabled: true,
     children: [
+      { label: "News", href: "/news" },
       { label: "Gallery", href: "/gallery" },
       { label: "Videos", href: "/videos" },
       { label: "Employee Engagement", href: "/employee-engagement" },

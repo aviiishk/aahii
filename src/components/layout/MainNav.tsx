@@ -51,7 +51,7 @@ export default function MainNav() {
                 <Link
                   href={item.href ?? "#"}
                   className={clsx(
-                    "flex items-center gap-1 py-2 px-2.5 rounded-md transition",
+                    "flex items-center gap-1 py-2 px-2.5 rounded-md transition whitespace-nowrap",
                     isActive(item.href)
                       ? "bg-(--nav-blue) text-white font-semibold"
                       : `
@@ -89,7 +89,7 @@ export default function MainNav() {
                         <Link
                           href={child.href!}
                           className={clsx(
-                            "block px-2.5 py-2 mx-2 rounded-md transition",
+                            "block px-2.5 py-2 mx-2 rounded-md transition ",
                             isActive(child.href)
                               ? "bg-(--nav-blue) text-white font-medium"
                               : "text-slate-600 hover:bg-(--nav-blue) hover:text-white",
