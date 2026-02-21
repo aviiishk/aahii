@@ -43,7 +43,7 @@ export default function TopAnnouncementBar() {
 
   return (
     <div className="bg-(--nav-blue) text-white text-sm overflow-x-hidden">
-      <div className="w-full mx-auto h-10 flex items-center px-3 md:px-4">
+      <div className="w-full mx-auto h-8 flex items-center px-3 md:px-4">
         {showWelcome ? (
           <div className="w-full text-center fade-in-out font-medium">
             Welcome to AAHII
@@ -78,13 +78,13 @@ export default function TopAnnouncementBar() {
 
             {/* ---------------- Mobile ---------------- */}
             <div className="flex md:hidden items-center gap-2 w-full">
-              <span className="bg-white/20 text-xs px-2 py-1 rounded font-semibold">
+              <span className="bg-white/20 text-[8px] md:text-xs px-1 py-1 rounded font-semibold">
                 Announcements
               </span>
 
               <a
                 href={announcements[mobileIndex].href}
-                className="truncate underline text-xs flex-1"
+                className="truncate underline text-[10px] md:text-xs flex-1"
               >
                 {announcements[mobileIndex].text}
               </a>
