@@ -15,22 +15,24 @@ export default function BrandingBar({
       <div className="flex items-center gap-3 sm:gap-5 min-w-0">
 
         {/* Main Logo */}
-        <Image
-          src="/logos/aahii-logo.png"
-          alt="AAHII official logo"
-          width={90}
-          height={90}
-          priority
-          className="
-            w-14 h-14
-            sm:w-16 sm:h-16
-            md:w-20 md:h-20
-            object-contain
-            flex-shrink-0
-            transition duration-300 ease-out
-            hover:scale-105
-          "
-        />
+
+
+<Image
+  src="https://res.cloudinary.com/ddi8hisku/image/upload/f_auto,q_auto,dpr_auto,w_200/v1772693374/AAHII_logo_kicvm7.webp"
+  alt="AAHII official logo"
+  width={90}
+  height={90}
+  priority
+  className="
+    w-14 h-14
+    sm:w-16 sm:h-16
+    md:w-20 md:h-20
+    object-contain
+    flex-shrink-0
+    transition duration-300 ease-out
+    hover:scale-105
+  "
+/>
 
         {/* Text Block */}
         <div className="min-w-0">

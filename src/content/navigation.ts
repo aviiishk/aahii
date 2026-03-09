@@ -57,7 +57,7 @@ export const primaryNavigation: NavItem[] = [
     ],
   },
 
-  { label: "Vendors", href: "/vendor/register" },
+  { label: "Vendors", href: "/vendor-registration" },
 ];
 
 
