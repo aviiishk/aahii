@@ -9,13 +9,14 @@ export default function EmployeeEngagementPage() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const images = [
-    "https://agihf.org/wp-content/uploads/2025/12/birthday_celebration_3.png",
-    "https://agihf.org/wp-content/uploads/2025/12/birthday_celebration_2.png",
-    "https://agihf.org/wp-content/uploads/2026/01/Women-in-Beige-Monochrome-Photo-Collage-Instagram-Post1.png",
-    "https://agihf.org/wp-content/uploads/2026/01/Women-in-Beige-Monochrome-Photo-Collage-Instagram-Post-1.png",
-    "https://agihf.org/wp-content/uploads/2025/12/Bhogali_bihu_1.jpg",
-    "https://agihf.org/wp-content/uploads/2026/01/eeee-scaled.jpeg",
-    "https://agihf.org/wp-content/uploads/2026/01/3www.jpeg",
+    "https://res.cloudinary.com/ddi8hisku/image/upload/v1773137607/birthday_celebration_3_wtkj6t.png",
+    "https://res.cloudinary.com/ddi8hisku/image/upload/v1773137619/birthday_celebration_2_gigevi.png",
+    "https://res.cloudinary.com/ddi8hisku/image/upload/v1773137630/Women-in-Beige-Monochrome-Photo-Collage-Instagram-Post1_ei3gs3.png",
+    "https://res.cloudinary.com/ddi8hisku/image/upload/v1773137635/Women-in-Beige-Monochrome-Photo-Collage-Instagram-Post-1_akf96l.png",
+    "https://res.cloudinary.com/ddi8hisku/image/upload/v1773137644/Bhogali_bihu_1_nkdhj3.jpg",
+    "https://res.cloudinary.com/ddi8hisku/image/upload/v1773137646/Bhogali_bihu_3_itmavb.jpg",
+    "https://res.cloudinary.com/ddi8hisku/image/upload/v1773138152/eeee-scaled_dta9al.jpg",
+    "https://res.cloudinary.com/ddi8hisku/image/upload/v1773138166/3www_bjybxv.jpg",
   ];
 
   // 🔥 Keyboard Navigation

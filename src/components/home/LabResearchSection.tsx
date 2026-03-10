@@ -18,47 +18,47 @@ const labs: LabCard[] = [
     title: "Invasive to Non-Invasive Diagnostics",
     desc:
       "Addresses the fast-growing diagnostics market with scalable, low-risk platforms that reduce procedure costs while enabling earlier, higher-volume detection.",
-    img: "https://agihf.org/wp-content/uploads/2026/01/inavsive.png",
-    href: "https://agihf.org/departments/#diagnostics",
+    img: "https://res.cloudinary.com/ddi8hisku/image/upload/v1773127203/invasive_1_auf8hk.png",
+    href: "/departments",
   },
   {
     title: "Personalized Medicine",
     desc:
       "Unlocks premium, outcomes-based care models through genomics-driven therapies tailored to individual patient profiles.",
-    img: "https://agihf.org/wp-content/uploads/2026/01/invasive.png",
-    href: "https://agihf.org/departments/#personalized",
+    img: "https://res.cloudinary.com/ddi8hisku/image/upload/v1773127203/inavsive_3_jvf4ds.png",
+    href: "/departments",
     bg: "bg-[#f0f9f4]",
   },
   {
     title: "Multi-Scale Robotics",
     desc:
       "Targets high-value surgical and interventional markets with precision robotics that improve efficiency, outcomes, and clinician productivity.",
-    img: "https://agihf.org/wp-content/uploads/2026/01/robot.png",
-    href: "https://agihf.org/departments/#robotics",
+    img: "https://res.cloudinary.com/ddi8hisku/image/upload/v1773127204/robot_1_vvlx9p.png",
+    href: "/departments",
     bg: "bg-[#eef5ff]",
   },
   {
     title: "Nano-Therapeutics",
     desc:
       "Enables next-generation oncology and chronic-disease treatments through high-margin, targeted delivery platforms with strong IP potential.",
-    img: "https://agihf.org/wp-content/uploads/2026/01/medicine-doctor-touching-electronic-medical-record-tablet-dna-digital-healthcare-network-connection-hologram-modern-virtual-icon-scaled.jpg",
-    href: "https://agihf.org/departments/#nano",
+    img: "https://res.cloudinary.com/ddi8hisku/image/upload/v1773127203/medicine-doctor-touching-electronic-medical-record-tablet-dna-digital-healthcare-network-connection-hologram-modern-virtual-icon-scaled_jdtoro.jpg",
+    href: "/departments",
     bg: "bg-[#dcd9ff]",
   },
   {
     title: "Integrated Medicine",
     desc:
       "Creates differentiated, preventive and chronic-care models by validating traditional systems within modern, scalable healthcare frameworks.",
-    img: "https://agihf.org/wp-content/uploads/2026/01/team-industrial-scientists-engineers-developers-innovating-new-vaccine-doctor-pointing-tablet-explaining-virus-evolution-coworker-scaled.jpg",
-    href: "https://agihf.org/departments/#integrated",
+    img: "https://res.cloudinary.com/ddi8hisku/image/upload/v1773127203/team-industrial-scientists-engineers-developers-innovating-new-vaccine-doctor-pointing-tablet-explaining-virus-evolution-coworker-scaled_kzhxph.jpg",
+    href: "/departments",
     bg: "bg-[#c8f2d5]",
   },
   {
     title: "Machine Learning & Big Data in ICU",
     desc:
       "Drives cost reduction and outcome improvement in critical care through predictive analytics and real-time decision support.",
-    img: "https://agihf.org/wp-content/uploads/2026/01/healthcare-professional-intensive-care-unit-scaled.jpg",
-    href: "https://agihf.org/departments/#machinelearning",
+    img: "https://res.cloudinary.com/ddi8hisku/image/upload/v1773127203/healthcare-professional-intensive-care-unit-scaled_gqfdug.jpg",
+    href: "/departments",
     bg: "bg-[#f3f0ff]",
   },
 ];
