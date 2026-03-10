@@ -23,22 +23,18 @@ export const eventsData: EventItem[] = [
     title: "Unveiling of Indigenous Low-Field MRI and Surgical Robot Prototypes in the Presence of the Hon’ble Chief Minister of Assam",
     slug: "unveiling-indigenous-low-field-mri-surgical-robot-prototypes",
     category: "research-conferences",
-    coverImage:"https://agihf.org/wp-content/uploads/2026/02/1-scaled.jpg",
+    coverImage:"https://res.cloudinary.com/ddi8hisku/image/upload/v1773136844/image_vnq8ui.jpg",
       
     images: [
-      "https://agihf.org/wp-content/uploads/2026/02/1-1-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/02/1-3-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/02/1-2-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/02/1-4-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/02/1-5-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/02/1-6-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/02/1-7-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/02/1-9-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/02/1-10-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/02/1-11-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/02/1-12-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/02/1-13-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/02/1-14-scaled.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773136937/1-3-scaled_z7tvc5.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773137142/1-14-scaled_jivrqk.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773137149/1-4-scaled_vvckvw.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773137128/cm_yvf0lj.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773137158/DSC01275.JPG-scaled_oc0njh.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773137170/1-11-scaled_wbrtp6.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773137182/1-5-scaled_tc1a7l.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773137192/1-9-scaled_nowz7p.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773137202/1-10-scaled_ps5ts5.jpg",
     ],
   },
 
@@ -47,20 +43,19 @@ export const eventsData: EventItem[] = [
     title: "Delegates from Kagawa University, Japan, 27th Jan 2026",
     slug: "delegates-kagawa-university-japan",
     category: "research-conferences",
-    coverImage:"https://agihf.org/wp-content/uploads/2026/01/japenese.jpg",
+    coverImage:"https://res.cloudinary.com/ddi8hisku/image/upload/v1773135856/image_fhkog7.jpg",
       
     images: [
-      "https://agihf.org/wp-content/uploads/2026/01/DSC_5515-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/01/DSC_5653-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/01/DSC_5673-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/01/DSC_5539-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/01/DSC_5567-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/01/DSC_5699-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/01/DSC_5682-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/01/DSC_5706-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/01/DSC_5703-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/01/DSC_5727-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/01/DSC_5651-scaled.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773136489/image_eeudv8.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773136504/image_yeifvy.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773136771/image_a6cgxd.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773136540/image_vywuaq.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773136551/image_vpozyj.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773136563/image_cybkh6.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773136576/image_iqpcqc.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773136587/image_db5z0m.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773136599/image_qnkrqv.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773136608/image_xr0vza.jpg",
     ],
   },
 
@@ -70,10 +65,10 @@ export const eventsData: EventItem[] = [
     slug: "training-nicu-quality-components-assam",
     category: "official-visits",
     coverImage:
-      "https://agihf.org/wp-content/uploads/2026/01/qqq.jpeg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773131908/image_kyuoic.jpg",
     images: [
-      "https://agihf.org/wp-content/uploads/2026/01/a.jpeg",
-      "https://agihf.org/wp-content/uploads/2026/01/qqq.jpeg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773131920/image_zndcou.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773131926/image_idzsjs.jpg",
     ],
   },
 
@@ -83,9 +78,9 @@ export const eventsData: EventItem[] = [
     slug: "director-review-visit-aahii",
     category: "medical-workshops",
     coverImage:
-      "https://agihf.org/wp-content/uploads/2026/01/sss.jpeg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773131800/image_mxdsoj.jpg",
     images: [
-      "https://agihf.org/wp-content/uploads/2026/01/jujj.jpeg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773131819/image_d4p9rr.jpg",
     ],
   },
 
@@ -95,9 +90,9 @@ export const eventsData: EventItem[] = [
     slug: "icc-healthtech-well-being-conclave",
     category: "research-conferences",
     coverImage:
-      "https://agihf.org/wp-content/uploads/2026/01/conclave.jpeg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773131747/image_o9ttxs.jpg",
     images: [
-      "https://agihf.org/wp-content/uploads/2026/01/ww.jpeg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773131762/image_gtuara.jpg",
     ],
   },
 
@@ -107,15 +102,14 @@ export const eventsData: EventItem[] = [
     slug: "icann-dec-2025",
     category: "medical-workshops",
     coverImage:
-      "https://agihf.org/wp-content/uploads/2026/01/5.jpeg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773131429/image_lgox0g.jpg",
     images: [
-      "https://agihf.org/wp-content/uploads/2026/01/Women-in-Beige-Monochrome-Photo-Collage-Instagram-Post2.png",
-      "https://agihf.org/wp-content/uploads/2026/01/4.jpeg",
-      "https://agihf.org/wp-content/uploads/2026/01/DSC_7901-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2026/01/3.jpeg",
-      "https://agihf.org/wp-content/uploads/2026/01/1.jpeg",
-      "https://agihf.org/wp-content/uploads/2026/01/ee.jpeg",
-      "https://agihf.org/wp-content/uploads/2026/01/2.jpeg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773131454/image_bgh78f.png",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773131465/image_mqbavv.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773131472/image_zqz6a8.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773131481/image_nvrp7c.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773131484/image_zo8ki9.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773131497/image_fgeosi.jpg",
     ],
   },
   {
@@ -124,11 +118,11 @@ export const eventsData: EventItem[] = [
     slug: "synapse-nov-2025",
     category: "medical-workshops",
     coverImage:
-      "https://agihf.org/wp-content/uploads/2026/01/3-1.jpeg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773131161/image_ndik4s.jpg",
     images: [
-      "https://agihf.org/wp-content/uploads/2026/01/2-1.jpeg",
-      "https://agihf.org/wp-content/uploads/2026/01/synpeppe.jpeg",
-      "https://agihf.org/wp-content/uploads/2026/01/1-1.jpeg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773131177/image_isn4u7.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773131185/image_wkyc5y.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773131356/image_s7dndj.jpg",
     ],
   },
   {
@@ -137,10 +131,10 @@ export const eventsData: EventItem[] = [
     slug: "tag-meeting-ahidms-may-2025",
     category: "medical-workshops",
     coverImage:
-      "https://agihf.org/wp-content/uploads/2025/12/TAG_Meeting_1-scaled.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773131030/image_unk03z.jpg",
     images: [
-      "https://agihf.org/wp-content/uploads/2025/12/TAG_Meeting_2-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2025/12/TAG_Meeting_3-scaled.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773131048/image_btqlj1.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773131060/image_io4sr0.jpg",
     ],
   },
 {
@@ -149,9 +143,9 @@ export const eventsData: EventItem[] = [
     slug: "healthcare-leadership-meet-eastern-region-2025",
     category: "medical-workshops",
     coverImage:
-      "https://agihf.org/wp-content/uploads/2026/01/5t5rt5rt.jpeg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773130981/image_eko3pj.jpg",
     images: [
-      "https://agihf.org/wp-content/uploads/2026/01/5t5rt5rt.jpeg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773130981/image_eko3pj.jpg",
     ],
   },
     {
@@ -160,12 +154,12 @@ export const eventsData: EventItem[] = [
     slug: "agihf-welcomes-dr-siddharth-singh-may-2025",
     category: "medical-workshops",
     coverImage:
-      "https://agihf.org/wp-content/uploads/2025/12/Dr_Siddharth_Singh_Visit_1-scaled.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773130609/image_hbycu2.jpg",
     images: [
-      "https://agihf.org/wp-content/uploads/2025/12/Dr_Siddharth_Singh_Visit_2-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2025/12/Dr_Siddharth_Singh_Visit_3.jpg",
-      "https://agihf.org/wp-content/uploads/2025/12/Dr_Siddharth_Singh_Visit_4-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2025/12/Dr_Siddharth_Singh_Visit_5.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773130627/image_vxkonw.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773130633/image_ntfjq8.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773130641/image_vgscqp.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773130809/image_bybf8w.jpg",
     ],
   },
  {
@@ -174,12 +168,12 @@ export const eventsData: EventItem[] = [
     slug: "pan-iit-jan-2025",
     category: "medical-workshops",
     coverImage:
-      "https://agihf.org/wp-content/uploads/2025/12/PANIIT4-scaled.webp",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773130382/image_fypfhz.jpg ",         
     images: [
-      "https://agihf.org/wp-content/uploads/2025/12/PANIIT3.webp",
-      "https://agihf.org/wp-content/uploads/2025/12/PANIIT2.webp",
-      "https://agihf.org/wp-content/uploads/2025/12/PANIIT1-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2025/12/PANIIT5-scaled.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773130402/image_rqfnwe.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773130409/image_y37uxg.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773130416/image_qhz8fh.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773130423/image_sulc8t.jpg",
     ],
   },
    {
@@ -188,12 +182,12 @@ export const eventsData: EventItem[] = [
     slug: "iisf-nov-dec-2024",
     category: "medical-workshops",
     coverImage:
-      "https://agihf.org/wp-content/uploads/2025/12/IISF2.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773130137/image_urowqv.jpg",
     images: [
-      "https://agihf.org/wp-content/uploads/2025/12/IISF1.jpg",
-      "https://agihf.org/wp-content/uploads/2025/12/IISF3.jpg",
-      "https://agihf.org/wp-content/uploads/2025/12/IISF4.jpg",
-      "https://agihf.org/wp-content/uploads/2025/12/IISF5.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773130229/image_urb7ug.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773130256/image_orwueb.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773130238/image_v5vods.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773130245/image_yqlost.jpg",
     ],
   },
    {
@@ -202,12 +196,12 @@ export const eventsData: EventItem[] = [
     slug: "symposium-nov-2024",
     category: "medical-workshops",
     coverImage:
-      "https://agihf.org/wp-content/uploads/2025/12/Symposium_4.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773129809/Symposium_2_kbht1e.webp",
     images: [
-      "https://agihf.org/wp-content/uploads/2025/12/Symposium_1.jpg",
-      "https://agihf.org/wp-content/uploads/2025/12/Symposium_2.jpg",
-      "https://agihf.org/wp-content/uploads/2025/12/Symposium_3-scaled.jpg",
-      "https://agihf.org/wp-content/uploads/2025/12/Symposium_6.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773129811/Symposium_1_sntim4.webp",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773129809/Symposium_2_kbht1e.webp",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773129806/Symposium_3-scaled_e4yeop.webp",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773129813/Symposium_4_ivqzrx.webp",
     ],
   },
      {
@@ -216,11 +210,11 @@ export const eventsData: EventItem[] = [
     slug: "moa-signing-nov-2024",
     category: "medical-workshops",
     coverImage:
-      "https://agihf.org/wp-content/uploads/2025/12/MOA_4.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773129584/MOA_4_witzqv.webp",
     images: [
-      "https://agihf.org/wp-content/uploads/2025/12/MOA_1.jpg",
-      "https://agihf.org/wp-content/uploads/2025/12/MOA_2.jpg",
-      "https://agihf.org/wp-content/uploads/2025/12/MOA_3.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773129582/MOA_1_cxmdw4.webp",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773129581/MOA_2_yiyrry.webp",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773129580/MOA_3_quqlzd.webp",
     ],
   },
        {
@@ -229,9 +223,9 @@ export const eventsData: EventItem[] = [
     slug: "frontiers-nano-sciences-nov-2024",
     category: "medical-workshops",
     coverImage:
-      "https://agihf.org/wp-content/uploads/2025/12/FINS_2.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773129473/FINS_2_tqqpyi.webp",
     images: [
-      "https://agihf.org/wp-content/uploads/2025/12/FINS_1.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773129472/FINS_1_m5qvpl.webp",
     ],
   },
        {
@@ -240,11 +234,11 @@ export const eventsData: EventItem[] = [
     slug: "new-office-opening-research-park-oct-2024",
     category: "medical-workshops",
     coverImage:
-      "https://agihf.org/wp-content/uploads/2025/12/RESERACH_PARK_1.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773129339/RESERACH_PARK_1_dzpchh.webp",
     images: [
-      "https://agihf.org/wp-content/uploads/2025/12/RESERACH_PARK_2.jpg",
-      "https://agihf.org/wp-content/uploads/2025/12/RESERACH_PARK_3.jpg",
-      "https://agihf.org/wp-content/uploads/2025/12/RESERACH_PARK_4.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773129340/RESERACH_PARK_2_wqdwim.webp",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773129343/RESERACH_PARK_3_xso5ou.webp",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773129344/RESERACH_PARK_4_k4ru9q.webp",
     ],
   },
          {
@@ -253,11 +247,11 @@ export const eventsData: EventItem[] = [
     slug: "icann-doctors-conclave-nov-dec-2023",
     category: "medical-workshops",
     coverImage:
-      "https://agihf.org/wp-content/uploads/2025/12/Doctors_Conclave_new_1.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773129206/Doctors_Conclave_new_1_mn2q2u.webp",
     images: [
-      "https://agihf.org/wp-content/uploads/2025/12/Doctors_Conclave_new_2.jpg",
-      "https://agihf.org/wp-content/uploads/2025/12/Doctors_Conclave_new_3.jpg",
-      "https://agihf.org/wp-content/uploads/2025/12/Doctors_Conclave_new_4.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773129206/Doctors_Conclave_new_2_mrzdcl.webp",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773129207/Doctors_Conclave_new_3_romz8a.webp",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773129208/Doctors_Conclave_new_4_xo4tiq.webp",
     ],
   },
     {
@@ -266,11 +260,11 @@ export const eventsData: EventItem[] = [
     slug: "our-1st-doctors-conclave",
     category: "medical-workshops",
     coverImage:
-      "https://agihf.org/wp-content/uploads/2025/12/Doctors_Conclave_old_1.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773128692/Doctors_Conclave_old_2_nw77yz.webp",
     images: [
-      "https://agihf.org/wp-content/uploads/2025/12/Doctors_Conclave_old_2.jpg",
-      "https://agihf.org/wp-content/uploads/2025/12/Doctors_Conclave_old_3.jpg",
-      "https://agihf.org/wp-content/uploads/2025/12/Doctors_Conclave_old_4.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773128692/Doctors_Conclave_old_2_nw77yz.webp",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773128692/Doctors_Conclave_old_3_b5mntt.webp",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773128694/Doctors_Conclave_old_4_xojull.webp",
     ],
   },
   {
@@ -279,12 +273,12 @@ export const eventsData: EventItem[] = [
     slug: "foundation-stone-april-2023",
     category: "medical-workshops",
     coverImage:
-      "https://agihf.org/wp-content/uploads/2025/12/Foundation_2.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773128471/Foundation_3_w8zzm5.webp",
     images: [
-      "https://agihf.org/wp-content/uploads/2025/12/Foundation_1.jpg",
-      "https://agihf.org/wp-content/uploads/2025/12/Foundation_3.jpg",
-      "https://agihf.org/wp-content/uploads/2025/12/Foundation_4.jpg",
-      "https://agihf.org/wp-content/uploads/2025/12/Foundation_5.jpg",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773128471/Foundation_1_iqibfx.webp",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773128471/Foundation_3_w8zzm5.webp",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773128471/Foundation_5_o86u8f.webp",
+      "https://res.cloudinary.com/ddi8hisku/image/upload/v1773128471/Foundation_4_qqkpwa.webp",
     ],
   },
 ];
